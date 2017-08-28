@@ -68,7 +68,7 @@ angular.module('sportium.services', [])
         "teamBServing": bserve,
         "scoreboard": { "elements": [ { "title": "Sets", "teamAScore": sets1, "teamBScore": sets2 } ] }
     }
-    
+
   deferred.resolve(resp)
     return deferred.promise;
   }
@@ -111,7 +111,7 @@ angular.module('sportium.services', [])
       "teamBScore": score2,
       "currentPeriod": quarter
     }
-    
+
   deferred.resolve(resp)
     return deferred.promise;
   }
@@ -124,7 +124,7 @@ angular.module('sportium.services', [])
         return parseFootball(str);
     }
   }
-  //  Anna Karolina Schmiedlova (1) 1 40-Adv 1 (0) *Varvara Lepchenko Pittsburgh Steelers 3-7 Minnesota Vikings 3rd Quarter
+
   function parse(sport, str){
     switch (sport) {
       case 'football':

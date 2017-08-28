@@ -5,7 +5,7 @@
     <div flex="100" layout="row" layout-align="center center" class="text">
       <form ng-submit="saveEntry()" flex="100" layout="row" layout-wrap="layout-wrap" layout-align="center center">
         <div flex="90" flex-gt-xs="20" layout="row" layout-align="center center" class="mic">
-          <md-select ng-model="newEntry.sport" flex="100">
+          <md-select ng-model="newEntry.sport" flex="80">
             <md-option ng-repeat="o in sports" ng-value="o">{{o | uppercase}}</md-option>
           </md-select>
         </div>

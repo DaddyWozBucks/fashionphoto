@@ -1,0 +1,28 @@
+
+<md-sidenav md-component-id="menu" class="md-sidenav-left">
+  <div layout-fill="layout-fill" layout="row" layout-wrap="layout-wrap" layout-align="center start">
+    <div flex="100" layout="row" layout-align="start center" ng-click="sideNavLink('app.home',{})">
+      <h1 flex="none" flex-offset="5">Home</h1>
+    </div>
+    <div flex="100" layout="row" layout-align="start center" ng-click="sideNavLink('app.home',{})">
+      <h1 flex="none" flex-offset="5">Cities</h1>
+    </div>
+    <md-list flex="90" flex-offset="10">
+      <md-list-item ng-repeat="city in cities" layout="row" ng-click="sideNavLink('app.city',{cityId: city.id})">
+        <div flex="100" layout="row" layout-align="start center">
+          <h4 flex="none">{{city.name}}</h4>
+        </div>
+      </md-list-item>
+    </md-list>
+  </div>
+</md-sidenav>
+<div layout-fill="layout-fill" layout="row" layout-align="center start" layout-wrap="layout-wrap" class="scroll">
+  <div flex="none" layout="row" layout-align="space-between center" class="header">
+    <md-button ng-click="popSideNav()"><i style="color:white;" class="material-icons">menu</i></md-button>
+    <div flex="50" layout="row" layout-align="end center">
+      <div ng-class="{'m_btn_active': tempView == 'C'}" flex="none" layout="row" layout-align="center center" ng-click="setScale('C')" class="m_btn"><i flex="none" class="wi wi-celsius"></i></div>
+      <div ng-class="{'m_btn_active': tempView == 'F'}" flex="none" layout="row" layout-align="center center" ng-click="setScale('F')" class="m_btn"><i flex="none" class="wi wi-fahrenheit"></i></div>
+    </div>
+  </div>
+  <div flex="100" layout="row" ui-view="main" class="main"></div>
+</div>

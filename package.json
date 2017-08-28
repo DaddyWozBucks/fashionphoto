@@ -1,0 +1,53 @@
+{
+  "name": "Sportium test",
+  "version": "1.0.0",
+  "description": "Data entry parser",
+  "main": "app.js",
+  "dependencies": {
+
+    "bower-main": "^0.2.14",
+    "d.js": "^0.7.5",
+    "dot": "^1.0.3",
+    "jade": "^1.11.0",
+    "minimatch": "^3.0.3",
+    "moment-timezone": "^0.5.7",
+    "path-exists": "^3.0.0"
+  },
+  "devDependencies": {
+    "event-stream": "^3.3.2",
+    "express": "^4.13.3",
+    "gulp": "^3.9.0",
+    "gulp-angular-filesort": "^1.1.1",
+    "gulp-awspublish": "^3.3.0",
+    "gulp-bower-src": "^0.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-csso": "^1.0.1",
+    "gulp-filter": "^3.0.1",
+    "gulp-gzip": "^1.4.0",
+    "gulp-inject": "^3.0.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.1.1",
+    "gulp-uglify": "^1.5.1",
+    "gulp-watch": "^4.3.5",
+    "gulp-webserver": "^0.9.1",
+    "main-bower-files": "^2.9.0",
+    "marked": "^0.3.5",
+    "path-exists": "^3.0.0",
+    "stream-series": "^0.1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaddyWozBucks/sportium.git"
+  },
+  "author": "Warwick Beamish",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DaddyWozBucks/sportium/issues"
+  },
+  "homepage": "https://sportium.bloodsweatandtears.eu"
+}

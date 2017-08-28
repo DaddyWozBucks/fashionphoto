@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Scroll Trigger</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular.js"></script>
+  <script src="../dist/scroll-trigger.js"></script>
+  <script>
+    angular.module('demo', ['scroll-trigger'])
+    .config(function(ScrollTriggerProvider) {
+      ScrollTriggerProvider.offset(200);
+    })
+    .controller('TestCtrl', function($scope) {
+      $scope.call = function(thing) {
+        console.log('called with ' + thing);
+      };
+    })
+    .run(function() {
+      var div = document.createElement('div');
+      div.setAttribute('scroll-trigger', 'call(123)');
+      div.setAttribute('ng-controller', 'TestCtrl');
+      document.body.appendChild(div);
+    });
+  </script>
+  <style>
+    div {
+      width: 200px;
+      height: 1000px;
+      background-color: #147;
+    }
+    .placeholder {
+      background-color: #000;
+    }
+    .offset {
+      height: 200px;
+      background-color: #f83;
+    }
+  </style>
+</head>
+
+<body ng-app="demo">
+  <div class="placeholder"></div>
+  <div class="offset"></div>
+</body>
+
+</html>

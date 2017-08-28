@@ -1,0 +1,183 @@
+
+<div layout-fill="layout-fill" layout-wrap="layout-wrap" layout="row" layout-align="center start">
+  <div flex="100" layout="row" class="city_box mc"> 
+    <div flex="95" flex-gt-xs="90" layout="row" layout-wrap="layout-wrap" class="mc">
+      <md-grid-list flex="100" md-row-height="1:1" md-cols="12" md-gutter="4px" md-gutter-xs="4px" md-gutter-sm="4px" md-gutter-gt-xs="4px">
+        <md-grid-tile md-rowspan="10" md-colspan="12" md-colspan-gt-xs="3" md-rowspan-gt-xs="3">
+          <div layout-fill="layout-fill" layout="row" layout-wrap="layout-wrap" layout-align="center center">
+            <h1 flex="100" class="center">{{city.name}}</h1><i flex="none" style="font-size:90px;" ng-class="getIcon(todayDetail)" class="cyan"></i>
+            <h2 flex="100" class="center">{{todayDetail.weather[0].main}}</h2>
+          </div>
+        </md-grid-tile>
+        <md-grid-tile md-rowspan="16" md-colspan="12" md-colspan-gt-xs="9" md-rowspan-gt-xs="3">
+          <div layout-fill="layout-fill" layout="row" layout-wrap="layout-wrap" layout-align="center center" hide-xs="hide-xs">
+            <md-list flex="100" flex-gt-xs="50">
+              <md-list-item layout="row" layout-align="start center">
+                <div flex="50" layout="row" layout-align="start center">
+                  <p flex="none">Temperature</p>
+                </div>
+                <div flex="50" layout="row" layout-align="end center">
+                  <h4 flex="none">{{todayDetail.main.temp| kelvinFormat:tempView}}</h4>
+                </div>
+              </md-list-item>
+              <md-list-item layout="row" layout-align="start center">
+                <div flex="50" layout="row" layout-align="start center">
+                  <p flex="none">Max Temperature</p>
+                </div>
+                <div flex="50" layout="row" layout-align="end center">
+                  <h4 flex="none">{{todayDetail.main.temp_max| kelvinFormat:tempView}}</h4>
+                </div>
+              </md-list-item>
+              <md-list-item layout="row" layout-align="start center">
+                <div flex="50" layout="row" layout-align="start center">
+                  <p flex="none">Min Temperature</p>
+                </div>
+                <div flex="50" layout="row" layout-align="end center">
+                  <h4 flex="none">{{todayDetail.main.temp_min| kelvinFormat:tempView}}</h4>
+                </div>
+              </md-list-item>
+            </md-list>
+            <md-list flex="100" flex-gt-xs="50">
+              <md-list-item layout="row" layout-align="start center">
+                <div flex="50" layout="row" layout-align="start center">
+                  <p flex="none">Pressure</p>
+                </div>
+                <div flex="50" layout="row" layout-align="end center">
+                  <h4 flex="none">{{todayDetail.main.pressure| number:0}} hPa</h4>
+                </div>
+              </md-list-item>
+              <md-list-item layout="row" layout-align="start center">
+                <div flex="50" layout="row" layout-align="start center">
+                  <p flex="none">Sunrise</p>
+                </div>
+                <div flex="50" layout="row" layout-align="end center">
+                  <h4 flex="none">{{formatUnix(todayDetail.sys.sunrise, 'HH:mm')}}</h4>
+                </div>
+              </md-list-item>
+              <md-list-item layout="row" layout-align="start center">
+                <div flex="50" layout="row" layout-align="start center">
+                  <p flex="none">Sunset</p>
+                </div>
+                <div flex="50" layout="row" layout-align="end center">
+                  <h4 flex="none">{{formatUnix(todayDetail.sys.sunset, 'HH:mm')}}</h4>
+                </div>
+              </md-list-item>
+            </md-list>
+          </div>
+          <div layout-fill="layout-fill" layout="row" layout-wrap="layout-wrap" layout-align="center center" hide-gt-xs="hide-gt-xs">
+            <md-list flex="100">
+              <md-list-item layout="row" layout-align="start center">
+                <div flex="50" layout="row" layout-align="start center">
+                  <p flex="none">Temperature</p>
+                </div>
+                <div flex="50" layout="row" layout-align="end center">
+                  <h4 flex="none">{{todayDetail.main.temp| kelvinFormat:tempView}}</h4>
+                </div>
+              </md-list-item>
+              <md-list-item layout="row" layout-align="start center">
+                <div flex="50" layout="row" layout-align="start center">
+                  <p flex="none">Max Temperature</p>
+                </div>
+                <div flex="50" layout="row" layout-align="end center">
+                  <h4 flex="none">{{todayDetail.main.temp_max| kelvinFormat:tempView}}</h4>
+                </div>
+              </md-list-item>
+              <md-list-item layout="row" layout-align="start center">
+                <div flex="50" layout="row" layout-align="start center">
+                  <p flex="none">Min Temperature</p>
+                </div>
+                <div flex="50" layout="row" layout-align="end center">
+                  <h4 flex="none">{{todayDetail.main.temp_min| kelvinFormat:tempView}}</h4>
+                </div>
+              </md-list-item>
+              <md-list-item layout="row" layout-align="start center">
+                <div flex="50" layout="row" layout-align="start center">
+                  <p flex="none">Pressure</p>
+                </div>
+                <div flex="50" layout="row" layout-align="end center">
+                  <h4 flex="none">{{todayDetail.main.pressure | number:0}} hPa</h4>
+                </div>
+              </md-list-item>
+              <md-list-item layout="row" layout-align="start center">
+                <div flex="50" layout="row" layout-align="start center">
+                  <p flex="none">Sunrise</p>
+                </div>
+                <div flex="50" layout="row" layout-align="end center">
+                  <h4 flex="none">{{formatUnix(todayDetail.sys.sunrise, 'HH:mm')}}</h4>
+                </div>
+              </md-list-item>
+              <md-list-item layout="row" layout-align="start center">
+                <div flex="50" layout="row" layout-align="start center">
+                  <p flex="none">Sunset</p>
+                </div>
+                <div flex="50" layout="row" layout-align="end center">
+                  <h4 flex="none">{{formatUnix(todayDetail.sys.sunset, 'HH:mm')}}	</h4>
+                </div>
+              </md-list-item>
+            </md-list>
+          </div>
+        </md-grid-tile>
+      </md-grid-list>
+    </div>
+  </div>
+  <div flex="100" layout="row" layout-wrap="layout-wrap" layout-align="center start" class="mc">
+    <div flex="100" layout="row" layout-wrap="layout-wrap" layout-align="center start">
+      <md-tabs md-selected="selectedIndex" md-border-bottom="" md-dynamic-height="md-dynamic-height" flex="100" md-center-tabs="true">
+        <md-tab ng-repeat="(key, arr) in datesArrays" ,="," label="{{key}}">
+          <div layout-fill="layout-fill" layout="row" layout-wrap="layout-wrap" layout-align="center start">
+            <div style="padding: 5px; text-align: center;" flex="90" flex-gt-xs="50" layout="row" layout-wrap="layout-wrap" layout-align="center center">
+              <md-list flex="100">
+                <md-list-item ng-repeat="datum in arr" layout="row" layout-align="space-between center">
+                  <h4 flex="20">{{formatUnix(datum.dt, 'HH:mm')}}</h4><i flex="20" style="font-size:30px;" ng-class="getIcon(datum)"></i>
+                  <p flex="20">{{datum.weather[0].main}}</p>
+                  <p flex="20">{{datum.main.temp | kelvinFormat:tempView}}</p>
+                  <p flex="20">{{datum.wind.speed| kph}}</p>
+                </md-list-item>
+              </md-list>
+            </div>
+            <div style="padding: 5px; text-align: center;" flex="90" flex-gt-xs="50" layout="row" layout-wrap="layout-wrap" layout-align="center center">
+              <div flex="100" layout="row" layout-align="center center" layout-wrap="layout-wrap">
+                <div style="padding: 5px; text-align: center;" layout="row" layout-wrap="layout-wrap" flex="100" flex-gt-xs="50">
+                  <div flex="100" layout="row">
+                    <div flex="100" layout="row" layout-align="space-around center" class="chart_title"><i flex="none" class="wi wi-thermometer"></i>
+                      <h4 flex="none">Temperature</h4>
+                      <h4 flex="none">Avg: {{stats.temp | kelvinFormat:tempView}}</h4>
+                    </div>
+                  </div>
+                  <canvas id="radar" chart-data="chartsObj[key].temp.data" chart-options="options" chart-labels="chartsObj[key].temp.labels" class="chart chart-line"></canvas>
+                </div>
+                <div style="padding: 5px; text-align: center;" layout="row" layout-wrap="layout-wrap" flex="100" flex-gt-xs="50">
+                  <div flex="100" layout="row">
+                    <div flex="100" layout="row" layout-align="space-around center" class="chart_title"><i flex="none" class="wi wi-barometer"></i>
+                      <h4 flex="none">Pressure</h4>
+                      <h4 flex="none">Avg: {{stats.pressure|number:0}} hPa</h4>
+                    </div>
+                  </div>
+                  <canvas id="radar" chart-data="chartsObj[key].pressure.data" chart-options="options" chart-labels="chartsObj[key].pressure.labels" class="chart chart-line"></canvas>
+                </div>
+                <div style="padding: 5px; text-align: center;" layout="row" layout-wrap="layout-wrap" flex="100" flex-gt-xs="50">
+                  <div flex="100" layout="row">
+                    <div flex="100" layout="row" layout-align="space-around center" class="chart_title"><i flex="none" class="wi wi-humidity"></i>
+                      <h4 flex="none">Humidity</h4>
+                      <h4 flex="none">Avg: {{stats.humidity | number:0 }} %</h4>
+                    </div>
+                  </div>
+                  <canvas id="radar" chart-data="chartsObj[key].humidity.data" chart-options="options" chart-labels="chartsObj[key].humidity.labels" class="chart chart-line"></canvas>
+                </div>
+                <div style="padding: 5px; text-align: center;" layout="row" layout-wrap="layout-wrap" flex="100" flex-gt-xs="50">
+                  <div flex="100" layout="row">
+                    <div flex="100" layout="row" layout-align="space-around center" class="chart_title"><i flex="none" class="wi wi-strong-wind"></i>
+                      <h4 flex="none">Wind Speed</h4>
+                      <h4 flex="none">Avg: {{stats.wind | kph}}</h4>
+                    </div>
+                  </div>
+                  <canvas id="radar" chart-data="chartsObj[key].wind.data" chart-options="options" chart-labels="chartsObj[key].wind.labels" class="chart chart-line"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        </md-tab>
+      </md-tabs>
+    </div>
+  </div>
+</div>

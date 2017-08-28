@@ -1,0 +1,32 @@
+{
+
+		"museum": true,
+		"liquor_store": ,
+		"art_gallery": ,
+		"bakery": ,
+		"bowling_alley": ,
+		"cafe": ,
+		"night_club": ,
+		"park": ,
+		"restaurant": ,
+		"doctor": ,
+		"gym": ,
+		"movie_theatre": true
+
+}
+
+[
+
+		"museum",
+		"liquor_store",
+		"art_gallery",
+		"bakery",
+		"bowling_alley",
+		"cafe",
+		"night_club",
+		"park",
+		"restaurant",
+		"doctor",
+		"gym",
+		"movie_theatre",
+	]

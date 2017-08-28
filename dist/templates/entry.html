@@ -1,0 +1,131 @@
+
+<div flex="100" layout="column" layout-align="start none">
+  <div flex="30" layout="row" layout-align="center center" class="home_banner">
+    <div flex="none" class="inner"></div>
+    <div flex="100" layout="row" layout-align="center center" class="text">
+      <form ng-submit="saveEntry()" flex="100" layout="row" layout-wrap="layout-wrap" layout-align="center center">
+        <div flex="90" flex-gt-xs="20" layout="row" layout-align="center center" class="mic">
+          <md-select ng-model="newEntry.sport" flex="100">
+            <md-option ng-repeat="o in sports" ng-value="o">{{o | uppercase}}</md-option>
+          </md-select>
+        </div>
+        <div flex="90" flex-gt-xs="60" layout="row" layout-align="center center" class="mic">
+          <md-input-container flex="100" flex-gt-sm="80">
+            <label>Score Text</label>
+            <input type="text" ng-model="newEntry.text"/>
+          </md-input-container>
+        </div>
+        <div flex="100" flex-gt-xs="20" layout="row" layout-align="center center">
+          <md-button ng-submit="saveEntry()" style="width:100%">Save</md-button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div flex="flex" layout="row" layout-align="center start" layout-wrap="layout-wrap" class="home_dash">
+    <md-list flex="100" flex-sm="90" flex-md="85" flex-gt-md="80" layout="row" layout-wrap="layout-wrap">
+      <md-list-item flex="100" layout="row">
+        <div flex="100" layout="row" layout-align="center center">
+          <h1 flex="none">Nothing submitted yet!</h1>
+        </div>
+      </md-list-item>
+      <md-list-item ng-repeat="e in entries" flex="100" layout="row" layout-wrap="layout-wrap">
+        <div flex="100" layout="row" layout-wrap="layout-wrap" layout-align="center start">
+          <p flex="none">{{e.sport | uppercase}}</p>
+        </div>
+        <div flex="100" layout="row" layout-wrap="layout-wrap" layout-align="center start" ng-show="e.sport == 'football'">
+          <div flex="30" layout="row" layout-align="center center">
+            <h3 flex="none">{{e.teamAName}}</h3>
+          </div>
+          <div flex="15" layout="row" layout-align="center center">
+            <h2 flex="none">{{e.teamAScore}}</h2>
+          </div>
+          <div flex="5" layout="row" layout-align="center center">
+            <h1 flex="none">-</h1>
+          </div>
+          <div flex="15" layout="row" layout-align="center center">
+            <h2 flex="none">{{e.teamBScore}}</h2>
+          </div>
+          <div flex="30" layout="row" layout-align="center center">
+            <h3 flex="none"> {{e.teamBName}}</h3>
+          </div>
+        </div>
+        <div flex="100" layout="row" layout-wrap="layout-wrap" layout-align="center start" ng-show="e.sport == 'nfl'">
+          <div flex="100" layout="row" layout-wrap="layout-wrap" layout-align="center start">
+            <div flex="25" layout="row" layout-align="center center">
+              <h3 flex="none">{{e.teamAName}}</h3>
+            </div>
+            <div flex="15" layout="row" layout-align="center center">
+              <h2 flex="none">{{e.teamAScore}}</h2>
+            </div>
+            <div flex="5" layout="row" layout-align="center center">
+              <h1 flex="none">-</h1>
+            </div>
+            <div flex="15" layout="row" layout-align="center center">
+              <h2 flex="none">{{e.teamBScore}}</h2>
+            </div>
+            <div flex="25" layout="row" layout-align="center center">
+              <h3 flex="none"> {{e.teamBName}}</h3>
+            </div>
+          </div>
+          <div flex="100" layout="row" layout-wrap="layout-wrap" layout-align="center start">
+            <h3 flex="none">{{e.currentPeriod}}</h3>
+          </div>
+        </div>
+        <div flex="100" layout="row" layout-wrap="layout-wrap" layout-align="center start" ng-show="e.sport == 'tennis'">
+          <div flex="100" layout="row" layout-wrap="layout-wrap" layout-align="center start">
+            <div flex="30" layout="row" layout-align="center center">
+              <h3 flex="none">{{e.teamAName}}</h3>
+            </div>
+            <div flex="15" layout="row" layout-align="center center">
+              <h2 flex="none">{{e.teamAScore}}</h2>
+            </div>
+            <div flex="10" layout="row" layout-align="center center">
+              <h1 flex="none">-</h1>
+            </div>
+            <div flex="15" layout="row" layout-align="center center">
+              <h2 flex="none">{{e.teamBScore}}</h2>
+            </div>
+            <div flex="30" layout="row" layout-align="center center">
+              <h3 flex="none"> {{e.teamBName}}</h3>
+            </div>
+          </div>
+          <div flex="100" layout="row" layout-wrap="layout-wrap" layout-align="center start">
+            <md-list flex="100">
+              <md-list-item layout="row">
+                <div flex="100" layout="row" layout-wrap="layout-wrap" layout-align="center start">
+                  <div flex="40" layout="row" layout-align="center center">
+                    <h4 flex="none">{{e.teamAGames}}</h4>
+                  </div>
+                  <div flex="20" layout="row" layout-align="center center">
+                    <h3 flex="none">{{'games' | translate}}</h3>
+                  </div>
+                  <div flex="40" layout="row" layout-align="center center">
+                    <h4 flex="none">{{e.teamBGames}}</h4>
+                  </div>
+                </div>
+              </md-list-item>
+              <md-list-item layout="row" ng-repeat="el in e.scoreboard.elements">
+                <div flex="100" layout="row" layout-wrap="layout-wrap" layout-align="center start">
+                  <div flex="40" layout="row" layout-align="center center">
+                    <h4 flex="none">{{el.teamAScore}}</h4>
+                  </div>
+                  <div flex="20" layout="row" layout-align="center center">
+                    <h3 flex="none">{{el.title}}</h3>
+                  </div>
+                  <div flex="40" layout="row" layout-align="center center">
+                    <h4 flex="none">{{el.teamBScore}}</h4>
+                  </div>
+                </div>
+              </md-list-item>
+            </md-list>
+          </div>
+        </div>
+      </md-list-item>
+    </md-list>
+    <div flex="100" layout="row" layout-align="center center" ng-if="entries.length">
+      <md-card style="" flex="100" flex-gt-sm="80">
+        <json-formatter json="entries" open="3"></json-formatter>
+      </md-card>
+    </div>
+  </div>
+</div>

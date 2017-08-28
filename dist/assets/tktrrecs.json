@@ -1,0 +1,1986 @@
+{
+  "type" : "FeatureCollection",
+  "features" : [ {
+    "geometry" : {
+      "coordinates" : [ 2.1886930, 41.3912890 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=11188721140715543335",
+      "Location" : {
+        "Address" : "Carrer de Llull, 11, 08005 Barcelona, Spain",
+        "Business Name" : "Funky Cycle",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3912890",
+          "Longitude" : "2.1886930"
+        }
+      },
+      "Published" : "2016-09-30T07:10:44Z",
+      "Title" : "Funky Cycle",
+      "Updated" : "2016-09-30T07:10:44Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1715853, 41.3817399 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=9658750418627571157",
+      "Location" : {
+        "Address" : "La Rambla, 91, 08001 Barcelona, Spain",
+        "Business Name" : "Mercado de La Boqueria",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3817399",
+          "Longitude" : "2.1715853"
+        }
+      },
+      "Published" : "2016-09-29T12:32:32Z",
+      "Title" : "Mercado de La Boqueria",
+      "Updated" : "2016-09-29T12:32:32Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1757701, 41.3840208 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=9496835554116607759",
+      "Location" : {
+        "Address" : "Carrer de Santa Llúcia, 08002 Barcelona, Spain",
+        "Business Name" : "Capella de Santa Lucia",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3840208",
+          "Longitude" : "2.1757701"
+        }
+      },
+      "Published" : "2016-09-29T12:19:39Z",
+      "Title" : "Capella de Santa Lucia",
+      "Updated" : "2016-09-29T12:19:39Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1764450, 41.3832944 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=10199592265657306702",
+      "Location" : {
+        "Address" : "Carrer del Bisbe, 1, 08002 Barcelona, Spain",
+        "Business Name" : "Pont del Bisbe",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3832944",
+          "Longitude" : "2.1764450"
+        }
+      },
+      "Published" : "2016-09-29T12:17:00Z",
+      "Title" : "Pont del Bisbe",
+      "Updated" : "2016-09-29T12:17:00Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.175871, 41.404668 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?q=Pla%C3%A7a+de+Gaud%C3%AD,+08013+Barcelona&ftid=0x12a4a2dcc0d6b96b:0x8dbb426c9e19d937",
+      "Location" : {
+        "Latitude" : "41.404668",
+        "Longitude" : "2.175871"
+      },
+      "Published" : "2016-09-29T11:55:40Z",
+      "Title" : "Plaça de Gaudí, 08013 Barcelona",
+      "Updated" : "2016-09-29T11:55:40Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1616542, 41.4193180 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=1527149430569834832",
+      "Location" : {
+        "Address" : "MUHBA Turó de la Rovira, Carrer Marià Labèrnia, s/n, 08032 Barcelona, Spain",
+        "Business Name" : "Búnquers del Carmel",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.4193180",
+          "Longitude" : "2.1616542"
+        }
+      },
+      "Published" : "2016-09-29T11:19:35Z",
+      "Title" : "Bunkers del Carmel",
+      "Updated" : "2016-09-29T11:19:35Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1743558, 41.4036299 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=11229913421514525008",
+      "Location" : {
+        "Address" : "Carrer de Mallorca, 401, 08013 Barcelona, Spain",
+        "Business Name" : "La Sagrada Familia",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.4036299",
+          "Longitude" : "2.1743558"
+        }
+      },
+      "Published" : "2016-09-29T09:44:12Z",
+      "Title" : "La Sagrada Familia",
+      "Updated" : "2016-09-29T09:44:12Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 32.223592, -28.014006 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?q=-28.014006,32.223592",
+      "Location" : {
+        "Latitude" : "-28.014006",
+        "Longitude" : "32.223592"
+      },
+      "Published" : "2016-09-29T09:37:53Z",
+      "Title" : "-28.014006,32.223592",
+      "Updated" : "2016-09-29T09:37:53Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 32.214587, -28.018042 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?q=-28.018042,32.214587",
+      "Location" : {
+        "Latitude" : "-28.018042",
+        "Longitude" : "32.214587"
+      },
+      "Published" : "2016-09-29T09:29:56Z",
+      "Title" : "-28.018042,32.214587",
+      "Updated" : "2016-09-29T09:29:56Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 32.2180663, -28.0229696 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=1268045708262815937",
+      "Location" : {
+        "Address" : "Ubizane Wildlife Reserve, 1020 Main Road, South Africa",
+        "Business Name" : "Hotel Zululand Tree Lodge",
+        "Country Code" : "ZA",
+        "Geo Coordinates" : {
+          "Latitude" : "-28.0229696",
+          "Longitude" : "32.2180663"
+        }
+      },
+      "Published" : "2016-09-29T09:14:36Z",
+      "Title" : "Hotel Zululand Tree Lodge",
+      "Updated" : "2016-09-29T09:14:36Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 32.2145812, -28.0189156 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=17132678236990691049",
+      "Location" : {
+        "Address" : "1020 Main Road, Hluhluwe, 3960, South Africa",
+        "Business Name" : "Ubizane Wildlife Reserve",
+        "Country Code" : "ZA",
+        "Geo Coordinates" : {
+          "Latitude" : "-28.0189156",
+          "Longitude" : "32.2145812"
+        }
+      },
+      "Published" : "2016-09-29T09:14:06Z",
+      "Title" : "Ubizane Wildlife Reserve",
+      "Updated" : "2016-09-29T09:14:06Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.0343900, 41.3951050 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=16010962962849224429",
+      "Location" : {
+        "Address" : "Pol. Ind. El Pla, Carretera de Laureà Miró, 434, 08980 Sant Feliu de Llobregat, Barcelona, Spain",
+        "Business Name" : "Indoor Karting Barcelona",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3951050",
+          "Longitude" : "2.0343900"
+        }
+      },
+      "Published" : "2016-09-22T13:01:55Z",
+      "Title" : "Indoor Karting Barcelona",
+      "Updated" : "2016-09-22T16:26:33Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1805966, 41.4355979 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=6441662407898642231",
+      "Location" : {
+        "Address" : "Heron City Can Drago, Carrer d'Andreu Nin, S/N, 08016 Barcelona, Spain",
+        "Business Name" : "Gimnasio Barcelona Virgin Active Can Dragó",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.4355979",
+          "Longitude" : "2.1805966"
+        }
+      },
+      "Published" : "2016-09-22T10:26:15Z",
+      "Title" : "Gimnasio Barcelona Virgin Active Can Dragó",
+      "Updated" : "2016-09-22T10:26:15Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1808688, 41.4352431 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=11586028658395352012",
+      "Location" : {
+        "Address" : "Avinguda de Rio de Janeiro, 42, 08016 Barcelona, Spain",
+        "Business Name" : "Desigual Barcelona Heron City",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.4352431",
+          "Longitude" : "2.1808688"
+        }
+      },
+      "Published" : "2016-09-22T10:25:04Z",
+      "Title" : "Desigual Barcelona Heron City",
+      "Updated" : "2016-09-22T10:25:04Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1411993, 41.4244611 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=8248232261316651083",
+      "Location" : {
+        "Address" : "Passeig de la Vall d'Hebron, 101, 08035 Barcelona, Spain",
+        "Business Name" : "Barna Wagen Volkswagen",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.4244611",
+          "Longitude" : "2.1411993"
+        }
+      },
+      "Published" : "2016-09-20T12:30:19Z",
+      "Title" : "Barna Wagen Volkswagen",
+      "Updated" : "2016-09-20T12:30:19Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1798355, 41.3788139 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=16217020457486946965",
+      "Location" : {
+        "Address" : "Passeig de Colom, 17, 08002 Barcelona, Spain",
+        "Business Name" : "W4nted Rent-Electric",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3788139",
+          "Longitude" : "2.1798355"
+        }
+      },
+      "Published" : "2016-09-16T17:51:26Z",
+      "Title" : "W4nted Rent-Electric",
+      "Updated" : "2016-09-16T17:51:26Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.198329, 41.386953 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?q=41.38695265013225,2.198328785598278",
+      "Location" : {
+        "Latitude" : "41.386953",
+        "Longitude" : "2.198329"
+      },
+      "Published" : "2016-09-12T12:53:08Z",
+      "Title" : "41.38695265013225,2.198328785598278",
+      "Updated" : "2016-09-12T12:53:08Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1757381, 41.3904096 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=518760491124519593",
+      "Location" : {
+        "Address" : "Ronda de Sant Pere, 33, 08010 Barcelona, Spain",
+        "Business Name" : "Party By Paul",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3904096",
+          "Longitude" : "2.1757381"
+        }
+      },
+      "Published" : "2016-09-12T07:14:57Z",
+      "Title" : "Party By Paul",
+      "Updated" : "2016-09-12T07:14:57Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1565973, 41.3937617 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=12828120336021723366",
+      "Location" : {
+        "Address" : "Carrer de Balmes, 141, 08008 Barcelona, Spain",
+        "Business Name" : "Cash Converters",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3937617",
+          "Longitude" : "2.1565973"
+        }
+      },
+      "Published" : "2016-09-04T08:49:03Z",
+      "Title" : "Cash Converters",
+      "Updated" : "2016-09-04T08:49:03Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1629146, 41.3819459 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=7416352340913555919",
+      "Location" : {
+        "Address" : "Carrer de Floridablanca, 145, 08011 Barcelona, Spain",
+        "Business Name" : "Cash Converters",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3819459",
+          "Longitude" : "2.1629146"
+        }
+      },
+      "Published" : "2016-09-03T09:50:27Z",
+      "Title" : "Cash Converters",
+      "Updated" : "2016-09-03T09:50:27Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.202188, 41.397998 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?q=Carrer+de+la+Llacuna,+11,+08005+Barcelona&ftid=0x12a4a31519940cbd:0xd8759d2be94af07b",
+      "Location" : {
+        "Latitude" : "41.397998",
+        "Longitude" : "2.202188"
+      },
+      "Published" : "2016-08-30T16:05:44Z",
+      "Title" : "Carrer de la Llacuna, 11, 08005 Barcelona",
+      "Updated" : "2016-08-30T16:05:44Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1448418, 41.4142325 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=9715662424794073693",
+      "Location" : {
+        "Address" : "Passeig de la Mare de Déu del Coll, 10, 08023 Barcelona, Spain",
+        "Business Name" : "Catalonia Park Guell",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.4142325",
+          "Longitude" : "2.1448418"
+        }
+      },
+      "Published" : "2016-08-29T10:28:31Z",
+      "Title" : "Catalonia Park Guell",
+      "Updated" : "2016-08-29T10:28:31Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1740261, 41.3825621 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=15155778600472760111",
+      "Location" : {
+        "Address" : "Plaça de Sant Josep Oriol, 1, 08002 Barcelona, Spain",
+        "Business Name" : "el Jardí",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3825621",
+          "Longitude" : "2.1740261"
+        }
+      },
+      "Published" : "2016-08-21T17:16:10Z",
+      "Title" : "el Jardí",
+      "Updated" : "2016-08-21T17:16:10Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.147410, 41.393106 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?q=Av.+Diagonal,+463+BIS,+08036+Barcelona,+Espa%C3%B1a&ftid=0x12a4a29d02d74fbb:0xa627b9078ca04a24",
+      "Location" : {
+        "Latitude" : "41.393106",
+        "Longitude" : "2.147410"
+      },
+      "Published" : "2016-08-21T14:17:05Z",
+      "Title" : "Avinguda Diagonal, 463 BIS, 08036 Barcelona, España",
+      "Updated" : "2016-08-21T14:17:05Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1500201, 41.4003998 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=3654255286190666033",
+      "Location" : {
+        "Address" : "Carrer de Lincoln, 15, 08006 Barcelona, Spain",
+        "Business Name" : "Otto Zutz",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.4003998",
+          "Longitude" : "2.1500201"
+        }
+      },
+      "Published" : "2016-08-21T13:26:09Z",
+      "Title" : "Otto Zutz",
+      "Updated" : "2016-08-21T13:26:09Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1758720, 41.3871520 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=6621050925231972258",
+      "Location" : {
+        "Address" : "Carrer de Verdaguer i Callís, 12, 08003 Barcelona, Spain",
+        "Business Name" : "Antic Teatre - Espai de Creació",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3871520",
+          "Longitude" : "2.1758720"
+        }
+      },
+      "Published" : "2016-08-21T04:31:07Z",
+      "Title" : "Antic Teatre - Espai de Creació",
+      "Updated" : "2016-08-21T04:31:07Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1785430, 41.3751250 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=4741527963347563894",
+      "Location" : {
+        "Address" : "08039 Barcelona, Spain",
+        "Business Name" : "BCNAVAL TOURS",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3751250",
+          "Longitude" : "2.1785430"
+        }
+      },
+      "Published" : "2016-08-17T13:29:58Z",
+      "Title" : "BCNAVAL TOURS",
+      "Updated" : "2016-08-17T13:29:58Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 1.938676, 41.419579 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?q=41.419579,1.9386759999999998",
+      "Location" : {
+        "Latitude" : "41.419579",
+        "Longitude" : "1.938676"
+      },
+      "Published" : "2016-08-15T14:51:14Z",
+      "Title" : "41.419579,1.9386759999999998",
+      "Updated" : "2016-08-15T14:51:14Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1760738, 41.3875983 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=5111343111154754440",
+      "Location" : {
+        "Address" : "Carrer de la Mare de Déu del Pilar, 26, 08003 Barcelona, Spain",
+        "Business Name" : "Asociación Dam Square cannabis club",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3875983",
+          "Longitude" : "2.1760738"
+        }
+      },
+      "Published" : "2016-08-13T10:53:15Z",
+      "Title" : "Asociación Dam Square",
+      "Updated" : "2016-08-13T10:53:15Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1764499, 41.3892907 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=13521421915711571485",
+      "Location" : {
+        "Address" : "Passatge Sert, 1, 08003 Barcelona, Spain",
+        "Business Name" : "Friendly Rentals",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3892907",
+          "Longitude" : "2.1764499"
+        }
+      },
+      "Published" : "2016-08-12T19:21:26Z",
+      "Title" : "Friendly Rentals",
+      "Updated" : "2016-08-12T19:21:26Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1379214, 41.4012866 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=11985192578644943449",
+      "Location" : {
+        "Address" : "Calle de Prats de Molló, 14, 08021 Barcelona, Spain",
+        "Business Name" : "My Space Barcelona Apartments",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.4012866",
+          "Longitude" : "2.1379214"
+        }
+      },
+      "Published" : "2016-08-12T19:05:36Z",
+      "Title" : "My Space Barcelona Apartments",
+      "Updated" : "2016-08-12T19:05:36Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1754546, 41.3783687 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=9423175901815488971",
+      "Location" : {
+        "Address" : "Calle La Rambla, 23, 08002 Barcelona, Spain",
+        "Business Name" : "Micky's",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3783687",
+          "Longitude" : "2.1754546"
+        }
+      },
+      "Published" : "2016-08-12T17:26:45Z",
+      "Title" : "Micky's",
+      "Updated" : "2016-08-12T17:26:45Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.177310, 41.380310 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?q=41.38031001838645,2.177310325205326",
+      "Location" : {
+        "Latitude" : "41.380310",
+        "Longitude" : "2.177310"
+      },
+      "Published" : "2016-08-10T10:04:57Z",
+      "Title" : "41.38031001838645,2.177310325205326",
+      "Updated" : "2016-08-10T10:04:57Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1713950, 41.3800431 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=16608249593858525049",
+      "Location" : {
+        "Address" : "Carrer de la Junta de Comerç, 11, 08001 Barcelona, Spain",
+        "Business Name" : "Hostal La Terrassa",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3800431",
+          "Longitude" : "2.1713950"
+        }
+      },
+      "Published" : "2016-08-08T12:40:18Z",
+      "Title" : "Hostal La Terrassa",
+      "Updated" : "2016-08-08T12:40:18Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.2164204, 41.4094171 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=16027705271609166648",
+      "Location" : {
+        "Address" : "Avda. Diagonal, 3-Local 3370, 3ª Plta., 08019 Barcelona, Spain",
+        "Business Name" : "McDonald's",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.4094171",
+          "Longitude" : "2.2164204"
+        }
+      },
+      "Published" : "2016-08-07T18:35:01Z",
+      "Title" : "McDonald's",
+      "Updated" : "2016-08-07T18:35:01Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.2174900, 41.4088760 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=15266357591987781231",
+      "Location" : {
+        "Address" : "Passeig del Taulat, 262-264, 08019 Barcelona, Spain",
+        "Business Name" : "Hilton Diagonal Mar Barcelona",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.4088760",
+          "Longitude" : "2.2174900"
+        }
+      },
+      "Published" : "2016-08-07T13:22:58Z",
+      "Title" : "Hilton Diagonal Mar Barcelona",
+      "Updated" : "2016-08-07T13:22:58Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1766452, 41.3825281 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=12761579558299004569",
+      "Location" : {
+        "Address" : "Plaça de Sant Jaume, 3, 08002 Barcelona, Spain",
+        "Business Name" : "Costa Coffee - Plaça Sant Jaume",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3825281",
+          "Longitude" : "2.1766452"
+        }
+      },
+      "Published" : "2016-08-06T17:39:47Z",
+      "Title" : "Costa Coffee - Plaça Sant Jaume",
+      "Updated" : "2016-08-06T17:39:47Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1999616, 41.3913326 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=2835729525260189279",
+      "Location" : {
+        "Address" : "Carrer de Salvador Espriu, 81, 08005 Barcelona, Spain",
+        "Business Name" : "Bicicletas Barcelona -Urban Fun Electric Movement -Brompton",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3913326",
+          "Longitude" : "2.1999616"
+        }
+      },
+      "Published" : "2016-08-05T16:24:50Z",
+      "Title" : "Bicicletas Barcelona -Urban Fun Electric Movement -Brompton",
+      "Updated" : "2016-08-05T16:24:50Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1986496, 41.3871124 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=9950887673542832212",
+      "Location" : {
+        "Address" : "Port olímpic, Moll de Mestral, Mooring 2861, 08005 Barcelona, Spain",
+        "Business Name" : "Skylinebcn.com",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3871124",
+          "Longitude" : "2.1986496"
+        }
+      },
+      "Published" : "2016-08-05T09:54:11Z",
+      "Title" : "Skylinebcn.com",
+      "Updated" : "2016-08-05T09:54:11Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1748114, 41.3810318 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=12392568115580803861",
+      "Location" : {
+        "Address" : "Carrer de Ferran, 17, 08002 Barcelona, Spain",
+        "Business Name" : "Hostel Sun & Moon",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3810318",
+          "Longitude" : "2.1748114"
+        }
+      },
+      "Published" : "2016-07-29T09:31:57Z",
+      "Title" : "Hostel Sun & Moon",
+      "Updated" : "2016-07-29T09:31:57Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1707158, 41.3804908 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=811247446259845651",
+      "Location" : {
+        "Address" : "Carrer de l'Hospital, 63, 08001 Barcelona, Spain",
+        "Business Name" : "Alberg Center Rambles",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3804908",
+          "Longitude" : "2.1707158"
+        }
+      },
+      "Published" : "2016-07-29T08:43:00Z",
+      "Title" : "Alberg Center Rambles",
+      "Updated" : "2016-07-29T08:43:00Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1744780, 41.3845020 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=10370092107122996320",
+      "Location" : {
+        "Address" : "Carrer dels Arcs, 5, 08002 Barcelona, Spain",
+        "Business Name" : "El Cercle",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3845020",
+          "Longitude" : "2.1744780"
+        }
+      },
+      "Published" : "2016-07-18T09:50:13Z",
+      "Title" : "El Cercle",
+      "Updated" : "2016-07-18T09:50:13Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1741799, 41.3777842 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=2110021094485048132",
+      "Location" : {
+        "Address" : "Carrer de Guàrdia, 13, 08001 Barcelona, Spain",
+        "Business Name" : "Pensión Solárium",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3777842",
+          "Longitude" : "2.1741799"
+        }
+      },
+      "Published" : "2016-07-11T13:08:27Z",
+      "Title" : "Pensión Solárium",
+      "Updated" : "2016-07-11T13:08:27Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1735300, 41.3780457 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=15647997339356550180",
+      "Location" : {
+        "Address" : "Carrer de Guàrdia, 2, 08001 Barcelona, Spain",
+        "Business Name" : "t",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3780457",
+          "Longitude" : "2.1735300"
+        }
+      },
+      "Published" : "2016-07-05T13:15:28Z",
+      "Title" : "Torres Viure",
+      "Updated" : "2016-07-05T13:15:28Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1733997, 41.3774992 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=3948611668389838968",
+      "Location" : {
+        "Address" : "l'Est Spain, Carrer de l'Est, 7, 08001 Barcelona, Spain",
+        "Business Name" : "Casaette Bar",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3774992",
+          "Longitude" : "2.1733997"
+        }
+      },
+      "Published" : "2016-07-05T13:03:50Z",
+      "Title" : "Casaette Bar",
+      "Updated" : "2016-07-05T13:03:50Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1734369, 41.3774623 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=1002363125077900767",
+      "Location" : {
+        "Address" : "Carrer de l'Est, 9, 08001 Barcelona, Spain",
+        "Business Name" : "Adil Tandoori",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3774623",
+          "Longitude" : "2.1734369"
+        }
+      },
+      "Published" : "2016-07-05T12:51:41Z",
+      "Title" : "Adil Tandoori",
+      "Updated" : "2016-07-05T12:51:41Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 30.799407, -29.764625 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?q=-29.764624800000004,30.799406899999997",
+      "Location" : {
+        "Latitude" : "-29.764625",
+        "Longitude" : "30.799407"
+      },
+      "Published" : "2016-06-26T12:19:18Z",
+      "Title" : "-29.764624800000004,30.799406899999997",
+      "Updated" : "2016-06-26T12:19:18Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1864330, 41.3826830 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=13841939979757468128",
+      "Location" : {
+        "Address" : "Carrer del Doctor Aiguader, 9, 08003 Barcelona, Spain",
+        "Business Name" : "Rent Electric",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3826830",
+          "Longitude" : "2.1864330"
+        }
+      },
+      "Published" : "2016-06-22T16:13:35Z",
+      "Title" : "Rent Electric",
+      "Updated" : "2016-06-22T16:13:35Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1777725, 41.3757945 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=5409369201881532180",
+      "Location" : {
+        "Address" : "Plaça Portal de la pau, s/n, 08001 Barcelona, Spain",
+        "Business Name" : "Mirador de Colom",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3757945",
+          "Longitude" : "2.1777725"
+        }
+      },
+      "Published" : "2016-06-22T16:12:04Z",
+      "Title" : "Mirador de Colom",
+      "Updated" : "2016-06-22T16:12:04Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1745460, 41.3815690 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=7693666644739078369",
+      "Location" : {
+        "Address" : "Carrer de la Boqueria, 27, 08002 Barcelona, Spain",
+        "Business Name" : "Travel Bar",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3815690",
+          "Longitude" : "2.1745460"
+        }
+      },
+      "Published" : "2016-06-22T16:07:50Z",
+      "Title" : "Travel Bar",
+      "Updated" : "2016-06-22T16:07:50Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1986969, 41.3862230 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=7598724347999609990",
+      "Location" : {
+        "Address" : "Port Olímpic, Moll de la Marina, 9, 08005 Barcelona, Spain",
+        "Business Name" : "Corsa Nautica",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3862230",
+          "Longitude" : "2.1986969"
+        }
+      },
+      "Published" : "2016-06-22T16:06:26Z",
+      "Title" : "Corsa Nautica",
+      "Updated" : "2016-06-22T16:06:26Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1970400, 41.3858970 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=977818156147808635",
+      "Location" : {
+        "Address" : "Calle Marina 19 - 21, Local 14 - 15, 08005 Barcelona, Spain",
+        "Business Name" : "The Coconut Club",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3858970",
+          "Longitude" : "2.1970400"
+        }
+      },
+      "Published" : "2016-06-22T16:02:13Z",
+      "Title" : "The Coconut Club",
+      "Updated" : "2016-06-22T16:02:13Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1968440, 41.3853600 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=4248330849959104091",
+      "Location" : {
+        "Address" : "Passeig Marítim Barceloneta, 38, 08003 Barcelona, Spain",
+        "Business Name" : "Pacha Barcelona",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3853600",
+          "Longitude" : "2.1968440"
+        }
+      },
+      "Published" : "2016-06-22T16:00:19Z",
+      "Title" : "Pacha Barcelona",
+      "Updated" : "2016-06-22T16:00:19Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1737608, 41.3807549 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=6672375310924716853",
+      "Location" : {
+        "Address" : "Barcelona, Spain",
+        "Business Name" : "La Rambla",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3807549",
+          "Longitude" : "2.1737608"
+        }
+      },
+      "Published" : "2016-06-14T14:15:00Z",
+      "Title" : "La Rambla",
+      "Updated" : "2016-06-14T14:15:00Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1712122, 41.3834096 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=13964888549686213153",
+      "Location" : {
+        "Address" : "Rambla de Canaletes, 109, 08002 Barcelona, Spain",
+        "Business Name" : "Starbucks",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3834096",
+          "Longitude" : "2.1712122"
+        }
+      },
+      "Published" : "2016-06-14T14:14:48Z",
+      "Title" : "Starbucks",
+      "Updated" : "2016-06-14T14:14:48Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1711161, 41.3844234 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=3248820464224872717",
+      "Location" : {
+        "Address" : "La Rambla, 130, 08002 Barcelona, Spain",
+        "Business Name" : "SUBWAY Rambla de Canaletes",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3844234",
+          "Longitude" : "2.1711161"
+        }
+      },
+      "Published" : "2016-06-14T14:14:30Z",
+      "Title" : "SUBWAY Rambla de Canaletes",
+      "Updated" : "2016-06-14T14:14:30Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1735989, 41.3810817 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=313908022590013518",
+      "Location" : {
+        "Address" : "La Rambla, 78, 08002 Barcelona, Spain",
+        "Business Name" : "Souvenirs 78",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3810817",
+          "Longitude" : "2.1735989"
+        }
+      },
+      "Published" : "2016-06-14T14:14:09Z",
+      "Title" : "Souvenirs 78",
+      "Updated" : "2016-06-14T14:14:09Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1737834, 41.3808525 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=9378172732033694496",
+      "Location" : {
+        "Address" : "Carrer la Rambla, 72, 08002 Barcelona, Spain",
+        "Business Name" : "Souvenirs Liceu",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3808525",
+          "Longitude" : "2.1737834"
+        }
+      },
+      "Published" : "2016-06-14T14:14:06Z",
+      "Title" : "Souvenirs Liceu",
+      "Updated" : "2016-06-14T14:14:06Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1742970, 41.3803321 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=10372250169485187190",
+      "Location" : {
+        "Address" : "Carrer de Ferran, 2, 08002 Barcelona, Spain",
+        "Business Name" : "KFC",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3803321",
+          "Longitude" : "2.1742970"
+        }
+      },
+      "Published" : "2016-06-14T14:13:54Z",
+      "Title" : "KFC",
+      "Updated" : "2016-06-14T14:13:54Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1741893, 41.3804705 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=12280618162413944543",
+      "Location" : {
+        "Address" : "Rambla dels Caputxins, 60, 08002 Barcelona, Spain",
+        "Business Name" : "McDonald's",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3804705",
+          "Longitude" : "2.1741893"
+        }
+      },
+      "Published" : "2016-06-14T14:13:49Z",
+      "Title" : "McDonald's",
+      "Updated" : "2016-06-14T14:13:49Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1730300, 41.3814450 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=8070888941188434012",
+      "Location" : {
+        "Address" : "Spain",
+        "Business Name" : "Liceu",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3814450",
+          "Longitude" : "2.1730300"
+        }
+      },
+      "Published" : "2016-06-14T14:13:05Z",
+      "Title" : "Liceu",
+      "Updated" : "2016-06-14T14:13:05Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1736730, 41.3784390 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=6544371513315120932",
+      "Location" : {
+        "Address" : "Carrer Nou de la Rambla, 15, 08001 Barcelona, Spain",
+        "Business Name" : "Ramblas Building Apartments - Feel at home Barcelona",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3784390",
+          "Longitude" : "2.1736730"
+        }
+      },
+      "Published" : "2016-06-14T13:54:30Z",
+      "Title" : "Ramblas Building Apartments - Feel at home Barcelona",
+      "Updated" : "2016-06-14T13:54:30Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1749980, 41.3780682 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=4114454608295815877",
+      "Location" : {
+        "Address" : "Carrer de l'Arc del Teatre, 3, 08002 Barcelona, Spain",
+        "Business Name" : "Moog",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3780682",
+          "Longitude" : "2.1749980"
+        }
+      },
+      "Published" : "2016-06-14T13:52:48Z",
+      "Title" : "Moog",
+      "Updated" : "2016-06-14T13:52:48Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1706243, 41.3753953 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=12590741943426396195",
+      "Location" : {
+        "Address" : "08001, Carrer Nou de la Rambla, 103, 08001 Barcelona, Spain",
+        "Business Name" : "Bagdad",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3753953",
+          "Longitude" : "2.1706243"
+        }
+      },
+      "Published" : "2016-06-14T13:52:12Z",
+      "Title" : "Bagdad",
+      "Updated" : "2016-06-14T13:52:12Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1704536, 41.3754894 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=5178200190792881137",
+      "Location" : {
+        "Address" : "carrer Nou de la Rambla 106, 08001 Barcelona, Spain",
+        "Business Name" : "BudgetBikes - shop Paral·lel",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3754894",
+          "Longitude" : "2.1704536"
+        }
+      },
+      "Published" : "2016-06-14T13:51:31Z",
+      "Title" : "BudgetBikes - shop Paral·lel",
+      "Updated" : "2016-06-14T13:51:31Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1710360, 41.3758850 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=17286067778879946973",
+      "Location" : {
+        "Address" : "Carrer Nou de la Rambla, 91, 08001 Barcelona, Spain",
+        "Business Name" : "Be Sound Hostel",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3758850",
+          "Longitude" : "2.1710360"
+        }
+      },
+      "Published" : "2016-06-14T13:51:11Z",
+      "Title" : "Be Sound Hostel",
+      "Updated" : "2016-06-14T13:51:11Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1709490, 41.3758120 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=3634278369773848980",
+      "Location" : {
+        "Address" : "Carrer Nou de la Rambla, 93, 08001 Barcelona, Spain",
+        "Business Name" : "The Wal Telephone Center",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3758120",
+          "Longitude" : "2.1709490"
+        }
+      },
+      "Published" : "2016-06-14T13:51:08Z",
+      "Title" : "The Wal Telephone Center",
+      "Updated" : "2016-06-14T13:51:08Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1722173, 41.3767386 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=1480364220398602439",
+      "Location" : {
+        "Address" : "Avinguda de les Drassanes, 27-29, 08001 Barcelona, Spain",
+        "Business Name" : "Restaurante Bollywood",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3767386",
+          "Longitude" : "2.1722173"
+        }
+      },
+      "Published" : "2016-06-14T13:50:47Z",
+      "Title" : "Restaurante Bollywood",
+      "Updated" : "2016-06-14T13:50:47Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1723110, 41.3765774 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=16175091209480809873",
+      "Location" : {
+        "Address" : "Avinguda de les Drassanes, 27, 08001 Barcelona, Spain",
+        "Business Name" : "J.k. Asian Food S.l.",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3765774",
+          "Longitude" : "2.1723110"
+        }
+      },
+      "Published" : "2016-06-14T13:50:42Z",
+      "Title" : "J.k. Asian Food S.l.",
+      "Updated" : "2016-06-14T13:50:42Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1720158, 41.3767796 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=9246671088808823795",
+      "Location" : {
+        "Address" : "Avinguda de les Drassanes, 27-29, 08001 Barcelona, Spain",
+        "Business Name" : "CaixaBank",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3767796",
+          "Longitude" : "2.1720158"
+        }
+      },
+      "Published" : "2016-06-14T13:50:35Z",
+      "Title" : "Caixabank",
+      "Updated" : "2016-06-14T13:50:35Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1721828, 41.3772191 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=5990936737787451895",
+      "Location" : {
+        "Address" : "Carrer Nou de la Rambla, 60, 08001 Barcelona, Spain",
+        "Business Name" : "Carrefour Express Nou de la Rambla",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3772191",
+          "Longitude" : "2.1721828"
+        }
+      },
+      "Published" : "2016-06-14T13:50:15Z",
+      "Title" : "Carrefour Express Nou de la Rambla",
+      "Updated" : "2016-06-14T13:50:15Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1724691, 41.3775059 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=15020187402762433560",
+      "Location" : {
+        "Address" : "Carrer Nou de la Rambla, 50, 08001 Barcelona, Spain",
+        "Business Name" : "Hostal Barcelona Ramblas",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3775059",
+          "Longitude" : "2.1724691"
+        }
+      },
+      "Published" : "2016-06-14T13:49:59Z",
+      "Title" : "Hostal Barcelona Ramblas",
+      "Updated" : "2016-06-14T13:49:59Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1729562, 41.3779036 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=6047793961463132127",
+      "Location" : {
+        "Address" : "Carrer Nou de la Rambla, 40, 08001 Barcelona, Spain",
+        "Business Name" : "TC Forex",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3779036",
+          "Longitude" : "2.1729562"
+        }
+      },
+      "Published" : "2016-06-14T13:49:44Z",
+      "Title" : "TC Forex",
+      "Updated" : "2016-06-14T13:49:44Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1729742, 41.3779425 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=15265158107826137246",
+      "Location" : {
+        "Address" : "Carrer Nou de la Rambla, 38, 08001 Barcelona, Spain",
+        "Business Name" : "Barcelona Sun & Segway",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3779425",
+          "Longitude" : "2.1729742"
+        }
+      },
+      "Published" : "2016-06-14T13:48:23Z",
+      "Title" : "Barcelona Sun & Segway",
+      "Updated" : "2016-06-14T13:48:23Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1732072, 41.3781155 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=8025188966290408019",
+      "Location" : {
+        "Address" : "Carrer Nou de la Rambla, 34, 08001 Barcelona, Spain",
+        "Business Name" : "Pizza Circus",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3781155",
+          "Longitude" : "2.1732072"
+        }
+      },
+      "Published" : "2016-06-14T13:48:14Z",
+      "Title" : "Pizza Circus",
+      "Updated" : "2016-06-14T13:48:14Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1733116, 41.3782537 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=5039738724853799444",
+      "Location" : {
+        "Address" : "Carrer Nou de la Rambla, 28, 08001 Barcelona, Spain",
+        "Business Name" : "Farmacia Rubiralta Vilaseca",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3782537",
+          "Longitude" : "2.1733116"
+        }
+      },
+      "Published" : "2016-06-14T13:48:06Z",
+      "Title" : "Farmacia Rubiralta Vilaseca",
+      "Updated" : "2016-06-14T13:48:06Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1735531, 41.3783345 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=17399718024503433340",
+      "Location" : {
+        "Address" : "Carrer Nou de la Rambla, 19, 08001 Barcelona, Spain",
+        "Business Name" : "Wash'N Dry",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3783345",
+          "Longitude" : "2.1735531"
+        }
+      },
+      "Published" : "2016-06-14T13:47:54Z",
+      "Title" : "Wash & Dry",
+      "Updated" : "2016-06-14T13:47:54Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1736176, 41.3783985 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=9187306903037953912",
+      "Location" : {
+        "Address" : "Carrer Nou de la Rambla, 17, 08001 Barcelona, Spain",
+        "Business Name" : "The Green Rambla",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3783985",
+          "Longitude" : "2.1736176"
+        }
+      },
+      "Published" : "2016-06-14T13:47:46Z",
+      "Title" : "The Green Rambla",
+      "Updated" : "2016-06-14T13:47:46Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1738054, 41.3785226 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=7631948270443906284",
+      "Location" : {
+        "Address" : "Carrer Nou de la Rambla, 11, 08001 Barcelona, Spain",
+        "Business Name" : "Asian Noodles & Sushi",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3785226",
+          "Longitude" : "2.1738054"
+        }
+      },
+      "Published" : "2016-06-14T13:47:39Z",
+      "Title" : "Asian Noodles & Sushi",
+      "Updated" : "2016-06-14T13:47:39Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1738157, 41.3787267 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=1563370038360271742",
+      "Location" : {
+        "Address" : "Carrer Nou de la Rambla, 16, 08001 Barcelona, Spain",
+        "Business Name" : "Dia Supermarket",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3787267",
+          "Longitude" : "2.1738157"
+        }
+      },
+      "Published" : "2016-06-14T13:47:22Z",
+      "Title" : "Dia Supermarket",
+      "Updated" : "2016-06-14T13:47:22Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1743140, 41.3790304 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=12135646761078495736",
+      "Location" : {
+        "Address" : "Calle Nou de la Rambla, 1 BIS, 08001 Barcelona, Spain",
+        "Business Name" : "CaixaBank",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3790304",
+          "Longitude" : "2.1743140"
+        }
+      },
+      "Published" : "2016-06-14T13:47:12Z",
+      "Title" : "\"la Caixa\"",
+      "Updated" : "2016-06-14T13:47:12Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1749042, 41.3795651 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=15333473841317635239",
+      "Location" : {
+        "Address" : "La Rambla, 44, 08002 Barcelona, Spain",
+        "Business Name" : "Farmacia La Rambla Barcelona",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3795651",
+          "Longitude" : "2.1749042"
+        }
+      },
+      "Published" : "2016-06-14T13:46:49Z",
+      "Title" : "Farmacia La Rambla Barcelona",
+      "Updated" : "2016-06-14T13:46:49Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1752439, 41.3801288 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=1900457074626807061",
+      "Location" : {
+        "Address" : "Plaça Reial, s/n, 08002 Barcelona, Spain",
+        "Business Name" : "Plaça Reial",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3801288",
+          "Longitude" : "2.1752439"
+        }
+      },
+      "Published" : "2016-06-14T13:46:38Z",
+      "Title" : "Plaza Real",
+      "Updated" : "2016-06-14T13:46:38Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1746920, 41.3806400 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=4762298212135871260",
+      "Location" : {
+        "Address" : "Carrer de Ferran, 8, 08002 Barcelona, Spain",
+        "Business Name" : "My Bar",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3806400",
+          "Longitude" : "2.1746920"
+        }
+      },
+      "Published" : "2016-06-14T13:46:13Z",
+      "Title" : "My Bar",
+      "Updated" : "2016-06-14T13:46:13Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1738920, 41.3814360 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=3733063644650592626",
+      "Location" : {
+        "Address" : "Carrer de la Boqueria, 15, 08002 Barcelona, Spain",
+        "Business Name" : "Cheers",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3814360",
+          "Longitude" : "2.1738920"
+        }
+      },
+      "Published" : "2016-06-14T13:46:05Z",
+      "Title" : "Cheers",
+      "Updated" : "2016-06-14T13:46:05Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1752250, 41.3821310 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=15354300546796917195",
+      "Location" : {
+        "Address" : "Carrer dels Banys Nous, 8, 08002 Barcelona, Spain",
+        "Business Name" : "Stoke Bar and restaurant",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3821310",
+          "Longitude" : "2.1752250"
+        }
+      },
+      "Published" : "2016-06-14T13:46:02Z",
+      "Title" : "Stoke Bar",
+      "Updated" : "2016-06-14T13:46:02Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1751776, 41.3810507 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=2197878501082611229",
+      "Location" : {
+        "Address" : "Carrer de Ferran, 18, 08002 Barcelona, Spain",
+        "Business Name" : "O'hara's",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3810507",
+          "Longitude" : "2.1751776"
+        }
+      },
+      "Published" : "2016-06-14T13:45:59Z",
+      "Title" : "O'hara's",
+      "Updated" : "2016-06-14T13:45:59Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1744814, 41.3804936 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=633146680555941106",
+      "Location" : {
+        "Address" : "Carrer de Ferran, 6, 08002 Barcelona, Spain",
+        "Business Name" : "Temple Bar Irish Pub",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3804936",
+          "Longitude" : "2.1744814"
+        }
+      },
+      "Published" : "2016-06-14T13:45:52Z",
+      "Title" : "Temple Bar Irish Pub",
+      "Updated" : "2016-06-14T13:45:52Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1737360, 41.3786784 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=13555128136545588984",
+      "Location" : {
+        "Address" : "08001, Carrer Nou de la Rambla, 20, 08001 Barcelona, Spain",
+        "Business Name" : "Guell Tapas Restaurant",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3786784",
+          "Longitude" : "2.1737360"
+        }
+      },
+      "Published" : "2016-06-14T13:45:02Z",
+      "Title" : "Guell Tapas Restaurant",
+      "Updated" : "2016-06-14T13:45:02Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1747396, 41.3791703 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=1082193307222953568",
+      "Location" : {
+        "Address" : "Rambla de Caputxins 37, 08002, El Raval, Barcelona, Spain",
+        "Business Name" : "Hostal Benidorm",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3791703",
+          "Longitude" : "2.1747396"
+        }
+      },
+      "Published" : "2016-06-14T13:27:16Z",
+      "Title" : "Hostal Benidorm",
+      "Updated" : "2016-06-14T13:27:16Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1812103, 41.3828916 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=2705635889684530976",
+      "Location" : {
+        "Address" : "Carrer de la Nau, 3B, 08003 Barcelona, Spain",
+        "Business Name" : "Sticky Born",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3828916",
+          "Longitude" : "2.1812103"
+        }
+      },
+      "Published" : "2016-06-07T17:54:08Z",
+      "Title" : "Sticky Born",
+      "Updated" : "2016-06-07T17:54:08Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1771919, 41.3886924 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=8860003573924381381",
+      "Location" : {
+        "Address" : "Carrer de Sant Pere Més Alt, 50, 08003 Barcelona, Spain",
+        "Business Name" : "Sticky Green Club Social Privado",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3886924",
+          "Longitude" : "2.1771919"
+        }
+      },
+      "Published" : "2016-06-07T17:47:10Z",
+      "Title" : "Sticky Green Club Social Privado",
+      "Updated" : "2016-06-07T17:47:10Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.169992, 41.374883 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?q=Carrer+Nou+de+la+Rambla,+Barcelona&ftid=0x12a4a25bf1063b3b:0xae76860b999c895",
+      "Location" : {
+        "Latitude" : "41.374883",
+        "Longitude" : "2.169992"
+      },
+      "Published" : "2016-06-02T16:47:44Z",
+      "Title" : "Carrer Nou de la Rambla, Barcelona",
+      "Updated" : "2016-06-02T16:47:44Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.172967, 41.389496 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?q=Pla%C3%A7a+d'Urquinaona,+5,+08010+Barcelona,+Spain&ftid=0x12a4a2f040ab78f1:0xafc09d96c9cf6107",
+      "Location" : {
+        "Latitude" : "41.389496",
+        "Longitude" : "2.172967"
+      },
+      "Published" : "2016-05-31T15:52:10Z",
+      "Title" : "Plaça d'Urquinaona, 5, 08010 Barcelona, Spain",
+      "Updated" : "2016-05-31T15:52:10Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1730088, 41.3895494 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=10359551307631190340",
+      "Location" : {
+        "Address" : "Plaça d'Urquinaona, 5, 08010 Barcelona, Spain",
+        "Business Name" : "The George Payne Irish bar",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3895494",
+          "Longitude" : "2.1730088"
+        }
+      },
+      "Published" : "2016-05-31T15:47:49Z",
+      "Title" : "The George Payne Irish bar",
+      "Updated" : "2016-05-31T15:47:49Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1700471, 41.3870154 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=2228369972992726603",
+      "Location" : {
+        "Address" : "Plaça de Catalunya, 08002 Barcelona, Spain",
+        "Business Name" : "Plaça de Catalunya",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3870154",
+          "Longitude" : "2.1700471"
+        }
+      },
+      "Published" : "2016-05-31T15:20:50Z",
+      "Title" : "Plaça de Catalunya",
+      "Updated" : "2016-05-31T15:20:50Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.1720516, 41.3841104 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=8867950305046855755",
+      "Location" : {
+        "Address" : "Ramblas, 122, 08002 Barcelona, Spain",
+        "Business Name" : "Living Barcelona",
+        "Country Code" : "ES",
+        "Geo Coordinates" : {
+          "Latitude" : "41.3841104",
+          "Longitude" : "2.1720516"
+        }
+      },
+      "Published" : "2016-05-31T11:36:24Z",
+      "Title" : "Living Barcelona",
+      "Updated" : "2016-05-31T11:38:34Z"
+    },
+    "type" : "Feature"
+  } ]
+}

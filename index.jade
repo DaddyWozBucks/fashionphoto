@@ -1,0 +1,41 @@
+
+html(lang="en")
+	head
+		title="sportium"
+		<!-- inject:css-->
+		<!-- endinject -->
+	
+		base(base="base" href="/")
+		meta(name="description" content="Test Weather App")
+		meta(name="keywords" content="")
+		meta(name="author" content="Warwick Beamish")
+		meta(name="robots" content="index, follow")
+		meta(name="revisit-after" content="3 days")
+		link(rel="shortcut icon" href="assets/fav/tktr.es_fav.ico")   
+
+		link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+		
+
+	
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		body(ng-app="tktr" ng-cloak="" )
+			div(device-detector style="hidden: true;")
+			div#fb-root
+			div.headerui( ui-view="header" )
+			script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaG3yAf9wZEB-fqLE3U0QmuzO4iNn5HUw&libraries=places")
+			script(type="text/javascript" src="/bower_components/three.js/three.js")
+			script(type="text/javascript" src="/bower_components/threejs-examples/CanvasRenderer.js")
+			script(type="text/javascript" src="/bower_components/threejs-examples/DeviceOrientationControls.js")
+			script(type="text/javascript" src="/bower_components/threejs-examples/EffectComposer.js")
+			script(type="text/javascript" src="/bower_components/threejs-examples/MaskPass.js")
+			script(type="text/javascript" src="/bower_components/threejs-examples/Projector.js")
+			script(type="text/javascript" src="/bower_components/threejs-examples/RenderPass.js")
+			script(type="text/javascript" src="/bower_components/threejs-examples/ShaderPass.js")
+			script(type="text/javascript" src="/bower_components/threejs-examples/CopyShader.js")
+			script(type="text/javascript" src="/bower_components/doT.min.js")
+			<!-- inject:js -->
+			<!-- endinject -->
+		
+			
+		
+			script(src="//cdn.rawgit.com/auth0/angular-storage/master/dist/angular-storage.js")

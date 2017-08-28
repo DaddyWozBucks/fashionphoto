@@ -1,0 +1,25 @@
+//- md-sidenav( md-component-id="menu" class="md-sidenav-left")
+//- 	div(layout-fill layout="row" layout-wrap layout-align="center start")
+//- 		
+div(layout-fill layout="column"  layout-align="start center" )
+	
+	div.ntitle.white(flex="none" layout="row" layout-align="none center" )
+		div.titlebg(flex="none")
+		//- div.menu(flex="none" layout="row" layout-align="center center" ng-click="toggleSn('left',null)")
+		//- 	i.material-icons() menu
+		div.center(flex layout="row" layout-align="start center" )
+			
+			h3.no_m(flex="none") Sportium
+		
+	div.nmain(flex layout="column")
+		div.nav_steps(flex="none" layout="row" layout-align="none center" ng-show="showNavSteps")
+			div(flex="20" layout="row" layout-align="center center" ui-sref="app.home")
+				h4.no_m(flex="none" hide-xs) Home
+				i.material-icons(hide-gt-xs) home
+			div(flex="5" layout="row" layout-align="center center" ng-show="currentState != 'home'")
+				i.material-icons() chevron_right
+			div(flex="40" layout="row" layout-align="center center" ng-show="currentState != 'home'")
+				h4.no_m(flex="none" ) {{currentState | capitalise}}
+				
+		div.body(flex ui-view="main" layout="column")
+	

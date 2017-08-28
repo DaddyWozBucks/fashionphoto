@@ -1,0 +1,18 @@
+
+<div flex="100" style="height: 100%;" layout="row" layout-align="center center">
+  <md-card flex="none" layout="row" layout-wrap="layout-wrap" layout-align="center start">
+    <md-card-header flex="100" layout="row" layout-align="start center" class="black">
+      <h2 flex="none">Login</h2>
+    </md-card-header>
+    <md-card-content flex="100" layout="row" layout-wrap="layout-wrap" layout-align="center start">
+      <md-input-container flex="100" ng-repeat="(k,f) in loginForm">
+        <label>{{f.label}}</label>
+        <input type="{{f.type}}" ng-model="f.value"/>
+      </md-input-container>
+    </md-card-content>
+    <md-card-actions flex="100" layout="row" layout-align="end center">
+      <md-button ng-click="login()" ng-show="loginForm.username.value != '' &amp;&amp; loginForm.password.value != '' &amp;&amp; loginForm.password.value.length &gt; 6">Login</md-button>
+      <md-button ng-hide="loginForm.username.value != '' &amp;&amp; loginForm.password.value != '' &amp;&amp; loginForm.password.value.length &gt; 6" disabled="disabled">Login</md-button>
+    </md-card-actions>
+  </md-card>
+</div>

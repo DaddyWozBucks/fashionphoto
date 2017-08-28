@@ -1,0 +1,45 @@
+
+<div flex="100" layout="row" layout-wrap="layout-wrap" layout-align="center center" class="h100">
+  <div flex="100" flex-gt-sm="60" layout="row" layout-align="center center" layout-wrap="layout-wrap" class="h100">					
+    <div flex="100" layout="row" layout-align="center center">
+      <md-input-container flex="none" class="search">
+        <label>Search for products</label>
+        <input type="text" ng-model="searchText"/>
+      </md-input-container>
+    </div>
+    <div flex="100" layout="row" layout-align="center start">
+      <div flex="100" layout="row" layout-align="space-around center">
+        <md-button ng-click="gridView = true">Grid View</md-button>
+        <md-button ng-click="gridView = false">List View</md-button>
+      </div>
+      <md-grid-list ng-show="gridView" flex="100" md-row-height="1:1" md-cols="12" md-gutter="4px" md-gutter-xs="4px" md-gutter-sm="4px" md-gutter-gt-sm="4px">
+        <md-grid-tile md-colspan="1" md-rowspan="1" ng-repeat-start="p in searchResults"><img ng-src="{{imgTransform(p.photo, 150, 150)}}" class="responsive"/></md-grid-tile>
+        <md-grid-tile md-colspan="2" md-rowspan="1" ng-repeat-end="ng-repeat-end">
+          <div layout-fill="layout-fill" layout-wrap="layout-wrap" layout-align="start start">
+            <div flex="100" layout="row" layout-wrap="layout-wrap" layout-align="start start">
+              <h3 flex="none">{{p.name}}</h3>
+            </div>
+            <div flex="100" layout="row" layout-wrap="layout-wrap" layout-align="end end">
+              <h2 flex="none">{{p.price | currency: "€":2}}</h2>
+            </div>
+          </div>
+        </md-grid-tile>
+      </md-grid-list>
+      <md-list ng-show="!gridView" flex="100">
+        <md-list-item ng-repeat="p in searchResults" layout="row">
+          <div flex="100" layout="row" layout-align="none center">
+            <div flex="none" class="img_box"><img ng-src="{{imgTransform(p.photo, 150, 150)}}"/></div>
+            <div flex="flex" layout="row" layout-wrap="layout-wrap" layout-align="start start">
+              <div flex="100" layout="row" layout-wrap="layout-wrap" layout-align="start start">
+                <h3 flex="none">{{p.name}}</h3>
+              </div>
+              <div flex="100" layout="row" layout-wrap="layout-wrap" layout-align="end end">
+                <h2 flex="none">{{p.price | currency: "€":2}}</h2>
+              </div>
+            </div>
+          </div>
+        </md-list-item>
+      </md-list>
+    </div>
+  </div>
+</div>

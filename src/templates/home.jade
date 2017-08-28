@@ -1,0 +1,12 @@
+div(flex="100"  layout="column" layout-align="start none")
+	div.home_banner(flex="30" layout="row" layout-align="center center")
+		div.inner(flex="none")
+		div.text(flex="100" layout="row" layout-align="center center")
+			h1.satisfy(flex="none") Hello, what would you like to do today?
+	div.home_dash(flex layout="row" layout-align="space-around center" layout-wrap)
+		div.option(flex="100" flex-sm="45" flex-gt-sm="30" layout="row" layout-align="center start" layout-wrap ui-sref="app.data_entry")
+			md-card(flex="100" flex-sm="90" flex-gt-sm="80" layout="row" layout-wrap layout-align="start center")
+				div.title(flex="100" layout="row" layout-align="center center")
+					h1(flex="none") 0 - 1
+				div.text(flex="100" layout="row" layout-align="center center")
+					h2(flex="none") Enter Results

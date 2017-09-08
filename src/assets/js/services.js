@@ -13,13 +13,13 @@ angular.module('fashion.services', [])
       data: {
 				search: sObj
 			},
-      url: 'http://localhost:5002/fashiontest-7aba2/us-central1/searchTags'
+      url: 'https://us-central1-backbaseweather-713d6.cloudfunctions.net/searchTags'
     };
 		$http(req).then(function(response){
 			var key = moment().format('x');
-			searches.put(key, response.data.photos.photo);
+
 			let resp = {key: key, data: response.data.photos.photo[0], search: {tags: tags, userId: userId || ""}}
-			debugger
+
 			deferred.resolve(resp);
 		})
 		return deferred.promise;
@@ -36,10 +36,9 @@ angular.module('fashion.services', [])
       data: {
 				search: sObj
 			},
-      url: 'http://localhost:5002/fashiontest-7aba2/us-central1/searchTags'
+      url: 'https://us-central1-backbaseweather-713d6.cloudfunctions.net/searchTags'
     };
 		$http(req).then(function(response){
-
 
 			deferred.resolve(response.data.photos);
 		})

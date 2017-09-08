@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "fashiontest-7aba2"
+    "default": "fashiontest-7aba2",
+    "temp": "backbaseweather-713d6"
   }
 }

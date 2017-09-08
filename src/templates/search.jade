@@ -1,5 +1,5 @@
-div.row(ng-controller="SearchCtrl as sc")
-	div.col-12.col-lg-8.align-center()
+div.row.justify-content-center(ng-controller="SearchCtrl as sc")
+	div.col-12.col-lg-8()
 		form(name='searchForm', ng-submit='sc.search(searchForm.$valid)', novalidate='')
 			.form-group
 				label Tags
@@ -9,17 +9,15 @@ div.row(ng-controller="SearchCtrl as sc")
 				label Username
 				input.form-control(type='text', name='username', ng-model='sc.userId', ng-minlength='3', ng-maxlength='24')
 			
-			button.btn.btn-primary(type='cancel') Cancel
+			button.btn.btn-primary(type='cancel' ng-click="searchForm.$empty()") Cancel
 			button.btn.btn-primary(type='submit' ng-disabled="searchForm.$invalid") Submit
 	div.col-12.col-lg-8.row.d-flex.d-justify-content-around()
-		//- div.d-flex.sc-result.d-flex.flex-nowrap(ng-repeat="ps in sc.searches track by $index" ui-sref="app.results({tags: ps.search.tags, userId: ps.search.userId})")
-		//- 	img.img-responsive(ng-src="{{ps.data.url_q}}")
-		//- 	div.d-flex.row()
-		//- 		p.col-6 {{ps.data.title}}
-		//- 		p.col-6 {{ps.data.datetaken | dFormat: 'lll'}}
-		//- 		p.col-6 {{ps.data.dateupload | unix: 'lll'}}
-		//- 		p.col-6 {{ps.data.ownername}}
-		.media(ng-repeat="ps in sc.searches track by $index" ui-sref="app.results({tags: ps.search.tags, userId: ps.search.userId})")
+		div.col-12.row
+			button.btn-clear(ng-click="setOrder('dateupload')") Uploaded
+			button.btn-clear(ng-click="setOrder('datetaken')") Taken
+			button.btn-clear(ng-click="setOrder('views')") Views
+			button.btn-clear(ng-click="setOrder('ownername')") Username
+		.media(ng-repeat="ps in sc.searches | orderBy: searchOrder" ui-sref="app.results({tags: ps.search.tags, userId: ps.search.userId})")
 			img.d-flex.mr-3(ng-src='{{ps.data.url_q}}', alt='Generic placeholder image')
 			.media-body
 				div.d-flex.row()
@@ -27,3 +25,4 @@ div.row(ng-controller="SearchCtrl as sc")
 					p.col-6 {{ps.data.datetaken | dFormat: 'lll'}}
 					p.col-6 {{ps.data.dateupload | unix: 'lll'}}
 					p.col-6 {{ps.data.ownername}}
+					p.col-6 {{ps.data.views}}

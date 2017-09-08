@@ -20,16 +20,21 @@ angular.module('fashion.controllers', ['fashion.services', 'fashion.filters'])
 	this.userId = '';
 	this.searches = [];
 	this.searchForm;
+	this.searchOrder = 'views';
 	this.search = function(valid){
 
 		if (valid) {
 
 			Flickr.searchTags(this.searchTags, this.userId).then(function(data){
+				debugger
 				self.searches.push(data);
-				this.searchTags = "";
-				this.userId = "";
+				self.searchTags = "";
+				self.userId = "";
 			})
 		}
+	};
+	this.setOrder = function(order){
+		self.searchOrder = order;
 	}
 }])
 
@@ -38,11 +43,13 @@ angular.module('fashion.controllers', ['fashion.services', 'fashion.filters'])
 	var self = this;
 	this.per_page = 20;
 	this.page = 1;
+	this.pages;
 	function loadResults() {
 		Flickr.retrieveSearch($stateParams.tags, $stateParams.userId, this.page, this.per_page).then(function(data){
 			console.log(data);
 			self.results = data.photo;
 			self.page = data.page;
+			self.pages = data.pages;
 		})
 	}
 	loadResults();

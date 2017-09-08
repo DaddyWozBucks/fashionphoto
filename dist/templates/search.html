@@ -1,6 +1,6 @@
 
-<div ng-controller="SearchCtrl as sc" class="row">
-  <div class="col-12 col-lg-8 align-center">
+<div ng-controller="SearchCtrl as sc" class="row justify-content-center">
+  <div class="col-12 col-lg-8">
     <form name="searchForm" ng-submit="sc.search(searchForm.$valid)" novalidate="">
       <div class="form-group">
         <label>Tags</label>
@@ -11,18 +11,25 @@
         <label>Username</label>
         <input type="text" name="username" ng-model="sc.userId" ng-minlength="3" ng-maxlength="24" class="form-control"/>
       </div>
-      <button type="cancel" class="btn btn-primary">Cancel</button>
+      <button type="cancel" ng-click="searchForm.$empty()" class="btn btn-primary">Cancel</button>
       <button type="submit" ng-disabled="searchForm.$invalid" class="btn btn-primary">Submit</button>
     </form>
   </div>
   <div class="col-12 col-lg-8 row d-flex d-justify-content-around">
-    <div ng-repeat="ps in sc.searches track by $index" ui-sref="app.results({tags: ps.search.tags, userId: ps.search.userId})" class="media"><img ng-src="{{ps.data.url_q}}" alt="Generic placeholder image" class="d-flex mr-3"/>
+    <div class="col-12 row">
+      <button ng-click="setOrder('dateupload')" class="btn-clear">Uploaded</button>
+      <button ng-click="setOrder('datetaken')" class="btn-clear">Taken</button>
+      <button ng-click="setOrder('views')" class="btn-clear">Views</button>
+      <button ng-click="setOrder('ownername')" class="btn-clear">Username</button>
+    </div>
+    <div ng-repeat="ps in sc.searches | orderBy: searchOrder" ui-sref="app.results({tags: ps.search.tags, userId: ps.search.userId})" class="media"><img ng-src="{{ps.data.url_q}}" alt="Generic placeholder image" class="d-flex mr-3"/>
       <div class="media-body">
         <div class="d-flex row">
           <p class="col-6">{{ps.data.title}}</p>
           <p class="col-6">{{ps.data.datetaken | dFormat: 'lll'}}</p>
           <p class="col-6">{{ps.data.dateupload | unix: 'lll'}}</p>
           <p class="col-6">{{ps.data.ownername}}</p>
+          <p class="col-6">{{ps.data.views}}</p>
         </div>
       </div>
     </div>

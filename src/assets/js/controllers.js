@@ -19,11 +19,15 @@ angular.module('fashion.controllers', ['fashion.services', 'fashion.filters'])
 	this.searchTags = [];
 	this.userId = '';
 	this.searches = [];
+	this.searchForm;
 	this.search = function(valid){
-		debugger;
+
 		if (valid) {
+
 			Flickr.searchTags(this.searchTags, this.userId).then(function(data){
 				self.searches.push(data);
+				this.searchTags = "";
+				this.userId = "";
 			})
 		}
 	}
@@ -31,7 +35,18 @@ angular.module('fashion.controllers', ['fashion.services', 'fashion.filters'])
 
 .controller('ResultsCtrl', ['$scope', '$http', '$stateParams', 'Flickr'
 , function($scope, $http, $stateParams, Flickr){
-	Flickr.retrieveSearch($stateParams.key).then(function(data){
-		this.results = data;
-	})
+	var self = this;
+	this.per_page = 20;
+	this.page = 1;
+	loadResults(){
+		Flickr.retrieveSearch($stateParams.tags, $stateParams.userId, this.page, this.per_page).then(function(data){
+			console.log(data);
+			self.results = data.photo;
+			self.page = data.page;
+		})
+	}
+	this.setPage = function(pNo) {
+		self.page = pNo;
+		loadResults();
+	}
 }])

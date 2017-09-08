@@ -61,7 +61,7 @@ angular.module('fashion',
         })
 
         .state('app.results', {
-          url: 'search/:key/results',
+          url: '/search/:tags/:userId/results',
           views: {
             "main": {
               templateUrl: "templates/results.html",

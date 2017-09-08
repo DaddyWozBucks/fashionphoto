@@ -1,5 +1,5 @@
 div.row(ng-controller="SearchCtrl as sc")
-	div.col-12.col-lg-8()
+	div.col-12.col-lg-8.align-center()
 		form(name='searchForm', ng-submit='sc.search(searchForm.$valid)', novalidate='')
 			.form-group
 				label Tags
@@ -7,13 +7,23 @@ div.row(ng-controller="SearchCtrl as sc")
 			// USERNAME
 			.form-group
 				label Username
-				input.form-control(type='text', name='username', ng-model='sc.userId', ng-minlength='3', ng-maxlength='12')
+				input.form-control(type='text', name='username', ng-model='sc.userId', ng-minlength='3', ng-maxlength='24')
 			
 			button.btn.btn-primary(type='cancel') Cancel
 			button.btn.btn-primary(type='submit' ng-disabled="searchForm.$invalid") Submit
 	div.col-12.col-lg-8.row.d-flex.d-justify-content-around()
-		div.d-flex.sc-result(ng-repeat="ps in sc.searches" ng-style="{'background-image': 'url(' + ps.data.url_q + ')'}" ui-sref="app.results({key: ps.key})")
-			p {{ps.data.title}}
-			p {{ps.data.date_taken | dFormat: 'lll'}}
-			p {{ps.data.dateupload | dFormat: 'lll'}}
-			p {{ps.data.owner_name}}
+		//- div.d-flex.sc-result.d-flex.flex-nowrap(ng-repeat="ps in sc.searches track by $index" ui-sref="app.results({tags: ps.search.tags, userId: ps.search.userId})")
+		//- 	img.img-responsive(ng-src="{{ps.data.url_q}}")
+		//- 	div.d-flex.row()
+		//- 		p.col-6 {{ps.data.title}}
+		//- 		p.col-6 {{ps.data.datetaken | dFormat: 'lll'}}
+		//- 		p.col-6 {{ps.data.dateupload | unix: 'lll'}}
+		//- 		p.col-6 {{ps.data.ownername}}
+		.media(ng-repeat="ps in sc.searches track by $index" ui-sref="app.results({tags: ps.search.tags, userId: ps.search.userId})")
+			img.d-flex.mr-3(ng-src='{{ps.data.url_q}}', alt='Generic placeholder image')
+			.media-body
+				div.d-flex.row()
+					p.col-6 {{ps.data.title}}
+					p.col-6 {{ps.data.datetaken | dFormat: 'lll'}}
+					p.col-6 {{ps.data.dateupload | unix: 'lll'}}
+					p.col-6 {{ps.data.ownername}}

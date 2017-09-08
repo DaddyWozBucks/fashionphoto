@@ -1,6 +1,19 @@
 
-<div class="col-12 col-lg-8 row d-flex d-justify-content-around">
-  <div ng-repeat="ps in rc.results" ng-style="{'background-image': 'url(' + ps.data.url_q + ')'}" ui-sref="app.results({key: ps.key})" class="d-flex sc-result">
-    <p>{{ps.data.title}}</p>
+<div ng-controller="ResultsCtrl as rc" class="col-12 row justify-content-center">
+  <div class="col-12 col-lg-8 row flex-wrap">
+    <div ng-repeat="ps in rc.results track by $index" class="col-4 d-flex"><img ng-src="{{ps.url_q}}" class="img-fluid"/></div>
   </div>
+  <div class="col-12 row">
+    <p>Page {{rc.page}}</p>
+    <p>Results per Page {{rc.per_page}}</p>
+  </div>
+  <nav aria-label="Page navigation example">
+    <ul class="pagination">
+      <li class="page-item"><a ng-click="setPage(rc.page - 1)" class="page-link">First</a></li>
+      <li class="page-item"><a ng-click="setPage(rc.page - 1)" class="page-link">{{rc.page - 1}}</a></li>
+      <li class="page-item"><a class="page-link">{{rc.page}}</a></li>
+      <li class="page-item"><a ng-click="setPage(rc.page + 1)" class="page-link">{{rc.page + 1}}</a></li>
+      <li class="page-item"><a ng-click="setPage(rc.pages)" class="page-link">Last</a></li>
+    </ul>
+  </nav>
 </div>

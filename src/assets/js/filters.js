@@ -17,6 +17,11 @@ angular.module('fashion.filters', [])
 
     }
 })
+.filter('unix', function() {
+    return function(input, format) {
+      return (!!input) ? moment.unix(input).clone().format(format) : '';
+    }
+})
 .filter('dFormat', function() {
     return function(input, format) {
       return (!!input) ? moment(input).clone().format(format) : '';

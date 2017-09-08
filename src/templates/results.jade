@@ -1,3 +1,28 @@
-div.col-12.col-lg-8.row.d-flex.d-justify-content-around()
-  div.d-flex.sc-result(ng-repeat="ps in rc.results" ng-style="{'background-image': 'url(' + ps.data.url_q + ')'}" ui-sref="app.results({key: ps.key})")
-    p {{ps.data.title}}
+div.col-12.row.justify-content-center(ng-controller="ResultsCtrl as rc")
+	div.col-12.col-lg-8.row.flex-wrap()
+		div.col-4.d-flex(ng-repeat="ps in rc.results track by $index" )
+			img.img-fluid(ng-src="{{ps.url_q}}")
+	div.col-12.row()
+	
+		p Page {{rc.page}}
+		p Results per Page {{rc.per_page}}
+	nav(aria-label='Page navigation example')
+		ul.pagination
+			li.page-item
+				a.page-link(ng-click="setPage(rc.page - 1)") First
+			li.page-item
+				a.page-link(ng-click="setPage(rc.page - 1)") {{rc.page - 1}}
+			li.page-item
+				a.page-link(){{rc.page}}
+			li.page-item
+				a.page-link(ng-click="setPage(rc.page + 1)") {{rc.page + 1}}
+			li.page-item
+				a.page-link(ng-click="setPage(rc.pages)") Last
+
+	//- div.d-flex.sc-result.d-flex.flex-nowrap(ng-repeat="ps in rc.results track by $index" )
+	//-   img.img-responsive(ng-src="{{ps.url_q}}")
+	//-   div.d-flex.row()
+	//-     p.col-6 {{ps.title}}
+	//-     p.col-6 {{ps.datetaken | dFormat: 'lll'}}
+	//-     p.col-6 {{ps.dateupload | unix: 'lll'}}
+	//-     p.col-6 {{ps.ownername}}

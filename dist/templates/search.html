@@ -1,6 +1,6 @@
 
 <div ng-controller="SearchCtrl as sc" class="row">
-  <div class="col-12 col-lg-8">
+  <div class="col-12 col-lg-8 align-center">
     <form name="searchForm" ng-submit="sc.search(searchForm.$valid)" novalidate="">
       <div class="form-group">
         <label>Tags</label>
@@ -9,18 +9,22 @@
       <!-- USERNAME-->
       <div class="form-group">
         <label>Username</label>
-        <input type="text" name="username" ng-model="sc.userId" ng-minlength="3" ng-maxlength="12" class="form-control"/>
+        <input type="text" name="username" ng-model="sc.userId" ng-minlength="3" ng-maxlength="24" class="form-control"/>
       </div>
       <button type="cancel" class="btn btn-primary">Cancel</button>
       <button type="submit" ng-disabled="searchForm.$invalid" class="btn btn-primary">Submit</button>
     </form>
   </div>
   <div class="col-12 col-lg-8 row d-flex d-justify-content-around">
-    <div ng-repeat="ps in sc.searches" ng-style="{'background-image': 'url(' + ps.data.url_q + ')'}" ui-sref="app.results({key: ps.key})" class="d-flex sc-result">
-      <p>{{ps.data.title}}</p>
-      <p>{{ps.data.date_taken | dFormat: 'lll'}}</p>
-      <p>{{ps.data.dateupload | dFormat: 'lll'}}</p>
-      <p>{{ps.data.owner_name}}</p>
+    <div ng-repeat="ps in sc.searches track by $index" ui-sref="app.results({tags: ps.search.tags, userId: ps.search.userId})" class="media"><img ng-src="{{ps.data.url_q}}" alt="Generic placeholder image" class="d-flex mr-3"/>
+      <div class="media-body">
+        <div class="d-flex row">
+          <p class="col-6">{{ps.data.title}}</p>
+          <p class="col-6">{{ps.data.datetaken | dFormat: 'lll'}}</p>
+          <p class="col-6">{{ps.data.dateupload | unix: 'lll'}}</p>
+          <p class="col-6">{{ps.data.ownername}}</p>
+        </div>
+      </div>
     </div>
   </div>
 </div>

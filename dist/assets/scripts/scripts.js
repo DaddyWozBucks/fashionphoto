@@ -132,13 +132,14 @@ angular.module('fashion.controllers', ['fashion.services', 'fashion.filters'])
 	var self = this;
 	this.per_page = 20;
 	this.page = 1;
-	loadResults(){
+	function loadResults() {
 		Flickr.retrieveSearch($stateParams.tags, $stateParams.userId, this.page, this.per_page).then(function(data){
 			console.log(data);
 			self.results = data.photo;
 			self.page = data.page;
 		})
 	}
+	loadResults();
 	this.setPage = function(pNo) {
 		self.page = pNo;
 		loadResults();

@@ -1,17 +1,12 @@
-angular.module('sportium',
-  ['sportium.controllers',
-   'sportium.services',
-   'sportium.directives',
-   'sportium.filters',
+angular.module('fashion',
+  ['fashion.controllers',
+   'fashion.services',
+   'fashion.directives',
+   'fashion.filters',
    'ui.router',
    'ngAnimate',
    'ngSanitize',
-   'firebase',
-   'ngMaterial',
-   'angular-storage',
-    'pascalprecht.translate',
-    'ngIdle',
-    'jsonFormatter'
+   'angular-storage'
   ])
 
   .run(['$rootScope', '$state', function($rootScope, $state) {
@@ -19,43 +14,13 @@ angular.module('sportium',
       // We can catch the error thrown when the $requireSignIn promise is rejected
       // and redirect the user back to the city page
       if (error === "AUTH_REQUIRED") {
-        $state.go("app.landing");
+        $state.go("app.search");
       }
     });
 
   }])
-  .config(['$mdDateLocaleProvider', function($mdDateLocaleProvider) {
-    $mdDateLocaleProvider.formatDate = function(date) {
-      return moment(date).format('YYYY-MM-DD');
-    };
-  }])
 
-  // .run(['Idle', function(Idle) {
-  //   // start watching when the app runs. also starts the Keepalive service by default.
-  //   Idle.watch();
-  // }])
 
-  .config(['$translateProvider', function($translateProvider) {
-
-  	$translateProvider.useStaticFilesLoader({
-  			 prefix: '../translations/'
-
-  		, suffix: '.json'
-  	}).preferredLanguage('en').useMissingTranslationHandlerLog().useSanitizeValueStrategy(null);
-
-  }])
-  // .run(['$rootScope', '$translate', function($rootScope, $translate) {
-  // 	$rootScope.$on('$translatePartialLoaderStructureChanged', function() {
-  // 		$translate.refresh();
-  // 	});
-  // }])
-  // .config(['$translateProvider', '$translatePartialLoaderProvider', function($translateProvider, $translatePartialLoaderProvider) {
-  // 	 $translatePartialLoaderProvider.addPart('app');
-  // 	$translateProvider.useLoader('$translatePartialLoader', {
-  // 		urlTemplate: 'https://tktr-fa4cf.firebaseio.com/translations/{part}/{lang}.json'
-  // 	});
-  // 	$translateProvider.preferredLanguage('en');
-  // }])
 
   .config(['$sceDelegateProvider', function($sceDelegateProvider) {
     $sceDelegateProvider.resourceUrlWhitelist([
@@ -94,32 +59,23 @@ angular.module('sportium',
 
           }
         })
-        .state('app.home', {
-          url: '/home'  ,
+
+        .state('app.results', {
+          url: 'search/:key/results',
           views: {
             "main": {
-              templateUrl: "templates/home.html",
-              controller: "HomeCtrl"
+              templateUrl: "templates/results.html",
+              controller: "ResultsCtrl"
             }
 
           }
         })
-        .state('app.data_entry', {
-          url: '/entry',
+        .state('app.search', {
+          url: '/search',
           views: {
             "main": {
-              templateUrl: "templates/entry.html",
-              controller: "EntryCtrl"
-            }
-
-          }
-        })
-        .state('app.landing', {
-          url: '/landing',
-          views: {
-            "main": {
-              templateUrl: "templates/landing.html",
-              controller: "LandingCtrl"
+              templateUrl: "templates/search.html",
+              controller: "SearchCtrl"
             }
 
           }
@@ -130,39 +86,17 @@ angular.module('sportium',
 
 
       $urlRouterProvider.otherwise(function() {
-        return '/app/home'
+        return '/app/search'
 
       });
     }
   ])
-  .config(['$mdThemingProvider', function($mdThemingProvider) {
-    $mdThemingProvider.theme('default')
-  }])
 
-angular.module('sportium.controllers', ['sportium.services', 'sportium.filters'])
-.controller('AppCtrl', ['$scope', '$log', '$state', '$stateParams', '$rootScope', '$http', '$anchorScroll', '$mdSidenav',  '$mdMedia', '$translate'
+angular.module('fashion.controllers', ['fashion.services', 'fashion.filters'])
+.controller('AppCtrl', ['$scope', '$log', '$state', '$stateParams', '$rootScope', '$http', '$anchorScroll'
 
-		, function ($scope, $log, $state, $stateParams, $rootScope, $http, $anchorScroll, $mdSidenav, $mdMedia, $translate) {
-			$scope.popSideNav = function() {
-		    $mdSidenav('menu').toggle();
-		  };
+		, function ($scope, $log, $state, $stateParams, $rootScope, $http, $anchorScroll) {
 
-			$scope.mQ = function(bp){
-				return $mdMedia(bp);
-			};
-
-			$scope.sideNavLink = function(str, params){
-				$mdSidenav('menu').close().then(function(){
-					$state.go(str, params)
-				})
-
-			};
-
-			$scope.setLang = function(code){
-				$scope.lang = code;
-				$translate.use(code);
-			};
-			$scope.setLang("en")
 			$scope.refreshState = function(){
 				var state = $state.current.name.replace("app.", "")
 
@@ -173,44 +107,30 @@ angular.module('sportium.controllers', ['sportium.services', 'sportium.filters']
 				$scope.showNavSteps = !$scope.showNavSteps;
 			};
 }])
-.controller('LandingCtrl', ['$scope', '$sce', '$interval'
-, function($scope, $sce, $interval){
-	$scope.ytUrl = $sce.trustAsResourceUrl("https://www.youtube.com/embed/bJD067WdqKU?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=bJD067WdqKU");
-	$scope.refreshState();
-	$scope.gIndex = 0;
-	$scope.gifs = ["https://www.bloodsweatandtears.eu/apa/sportium/sportium1.gif", "https://www.bloodsweatandtears.eu/apa/sportium/sportium2.gif", "https://www.bloodsweatandtears.eu/apa/sportium/sportium3.gif"]
-	$interval(function () {
-		if ($scope.gIndex < 2) {
-			$scope.gIndex += 1;
-		} else {
-			$scope.gIndex = 0;
-		}
-	}, 3300);
-	$scope.hideNavSteps();
-}])
-.controller('HomeCtrl', ['$scope', '$http', '$interval'
-, function($scope, $http, $interval){
-	$scope.refreshState();
-
-}])
-.controller('EntryCtrl', ['$scope', '$http', '$stateParams', 'Results'
-, function($scope, $http, $stateParams, Results){
-$scope.refreshState();
-		$scope.newEntry = {
-			sport: "auto"
-		};
-		$scope.sports = ["tennis", "football", "nfl", "auto"];
-		$scope.entries = [];
-		$scope.saveEntry = function(){
-			Results.parse($scope.newEntry.sport, $scope.newEntry.text).then(function(data){
-
-				$scope.entries.push(data);
+.controller('SearchCtrl', ['$scope', '$sce', '$state', 'Flickr'
+, function($scope, $sce, $state, Flickr){
+	var self  = this;
+	this.searchTags = [];
+	this.userId = '';
+	this.searches = [];
+	this.search = function(valid){
+		debugger;
+		if (valid) {
+			Flickr.searchTags(this.searchTags, this.userId).then(function(data){
+				self.searches.push(data);
 			})
-
 		}
+	}
 }])
 
-angular.module('sportium.directives',[])
+.controller('ResultsCtrl', ['$scope', '$http', '$stateParams', 'Flickr'
+, function($scope, $http, $stateParams, Flickr){
+	Flickr.retrieveSearch($stateParams.key).then(function(data){
+		this.results = data;
+	})
+}])
+
+angular.module('fashion.directives',[])
 .directive('tagEnter', function () {
   return function(scope, element, attrs) {
 
@@ -398,7 +318,7 @@ angular.module('sportium.directives',[])
   };
 }]);
 
-angular.module('sportium.filters', [])
+angular.module('fashion.filters', [])
 .filter('OWMIcon', function() {
     return function(input) {
       return "http://openweathermap.org/img/w/"+ input +".png"
@@ -415,6 +335,11 @@ angular.module('sportium.filters', [])
         return temp + " " + key
       }
 
+    }
+})
+.filter('dFormat', function() {
+    return function(input, format) {
+      return (!!input) ? moment(input).clone().format(format) : '';
     }
 })
 .filter('capitalise', function() {
@@ -535,150 +460,48 @@ jQuery.expr.filters.offscreen = function(el) {
 
 })(jQuery);
 
+angular.module('fashion.services', [])
+.factory('Flickr', ['$http', '$q', '$cacheFactory', function($http, $q, $cacheFactory){
+	var searches = $cacheFactory('searches');
 
-angular.module('sportium.services', [])
-.factory('Results', ['$http', '$q', function($http, $q){
-  function parseFootball(str){
-    var deferred = $q.defer();
-    var teams = str.split('-');
-    var team1A = teams[0].split(" ");
-    var team2A = teams[1].split(" ");
-    var score1 = team1A[team1A.length -1]
-    var score2 = team2A[0];
-    var team1 = "";
-    var team2 = "";
-    angular.forEach(team1A, function(str){
-      if (str != team1A[team1A.length -1]) {
-        team1 += " ";
-        team1 += str;
-      }
-    })
-    angular.forEach(team2A, function(str){
-      if (str != team2A[0]) {
-        team2 += " ";
-        team2 += str;
-      }
-    })
-  deferred.resolve({
-    "teamAName": team1,
-    "teamBName": team2,
-    "teamAScore": score1,
-    "teamBScore": score2,
-    "sport": "football"
-  })
-    return deferred.promise;
-  }
-  function parseTennis(str){
-    var deferred = $q.defer();
-    var players = str.split('-');
-    var bserve = false;
-    var setReg = /\(([^)]+)\)/;
-    if (players[1].indexOf("*") >= 0) {
+  var deferred = $q.defer();
+	function searchTags (tags, userId) {
+    let sObj = {tags: tags, sort: 'interestingness-desc', extras: 'date_upload, date_taken, owner_name, views, url_q'};
+    if (userId) {
+			sObj.user_id = userId;
+		}
+    var req = {
+      method: 'POST',
+      data: {
+				search: sObj
+			},
+      url: 'http://localhost:5002/fashiontest-7aba2/us-central1/searchTags'
+    };
+		$http(req).then(function(response){
+			var key = moment.unix();
+			searches.put(key, response.data);
+			let resp = {key: key, data: response.data.photos.photo[0]}
+			deferred.resolve(resp);
+		})
+		return deferred.promise;
+	};
 
-      bserve = true;
-    } else{
-
-      bserve = false;
-    }
-    var player1A = players[0].split(" ");
-    var player2A = players[1].split(" ");
-    var score1 = player1A[player1A.length -1]
-    var score2 = player2A[0];
-    var player1 = players[0].split('(')[0].slice(0,players[0].split('(')[0].length -1).replace(/\*/, "");
-    var player2 =  players[1].split(')')[1].slice(1,players[1].split(')')[1].length).replace(/\*/, "");;
-    var games1 = player1A[player1A.length -2];
-    var games2 = player2A[1];
-
-    var sets1 = setReg.exec(players[0])[1];
-    var sets2 = setReg.exec(players[1])[1];
-
-
-
-    var resp = {
-      "sport": "tennis",
-        "teamAName": player1,
-        "teamBName": player2,
-        "teamAScore": score1,
-        "teamBScore": score2,
-        "teamAGames": games1,
-        "teamBGames": games2,
-        "teamBServing": bserve,
-        "scoreboard": { "elements": [ { "title": "Sets", "teamAScore": sets1, "teamBScore": sets2 } ] }
-    }
-
-  deferred.resolve(resp)
-    return deferred.promise;
-  }
-  function parseNfl(str){
-    var deferred = $q.defer();
-    var players = str.split('-');
-    var quarter = "";
-    var pl2 = "";
-    var setReg = /\(([^)]+)\)/;
-    if (players[1].indexOf("1st") >= 0) {
-      quarter = players[1].slice(players[1].indexOf("1st"),players[1].length)
-      pl2 = players[1].slice(0, players[1].indexOf("1st") - 1)
-    } else if (players[1].indexOf("2nd") >= 0) {
-      quarter = players[1].slice(players[1].indexOf("2nd"),players[1].length)
-      pl2 = players[1].slice(0, players[1].indexOf("2nd") - 1)
-    } else if (players[1].indexOf("3rd") >= 0) {
-      quarter = players[1].slice(players[1].indexOf("3rd"),players[1].length)
-      pl2 = players[1].slice(0, players[1].indexOf("3rd") - 1)
-    }
-    else if (players[1].indexOf("4th") >= 0) {
-      quarter = players[1].slice(players[1].indexOf("4th"),players[1].length)
-      pl2 = players[1].slice(0, players[1].indexOf("4th") - 1)
-    }
-
-    var player1A = players[0].split(" ");
-    var player2A = pl2.split(" ");
-    var score1 = player1A.splice(player1A.length -1,1)[0]
-    var score2 = player2A.splice(0,1)[0];
-    var player1 = player1A.join(" ");
-    var player2 =  player2A.join(" ");
-
-
-
-
-    var resp = {
-      "sport": "nfl",
-      "teamAName": player1,
-      "teamBName": player2,
-      "teamAScore": score1,
-      "teamBScore": score2,
-      "currentPeriod": quarter
-    }
-
-  deferred.resolve(resp)
-    return deferred.promise;
-  }
-  function determineSport(str){
-    if (str.indexOf("Quarter") > -1) {
-      return parseNfl(str);
-    } else if (str.indexOf("*") > -1) {
-      return parseTennis(str)
-    } else  {
-        return parseFootball(str);
-    }
-  }
-
-  function parse(sport, str){
-    switch (sport) {
-      case 'football':
-          return parseFootball(str);
-      case 'nfl':
-          return parseNfl(str);
-      case 'tennis':
-          return parseTennis(str)
-      case 'auto':
-          return determineSport(str)
-      default:
-          return " "
-  }
-  }
+	function retrieveSearch (key) {
+		var deferred = $q.defer();
+		var search = searches.get(key);
+		if (search) {
+			deferred.resolve(search);
+		} else {
+			deferred.resolve([]);
+		};
+		return deferred.promise;
+	};
 	return {
-    parse: function(sport, str){
-      return parse(sport, str)
-    }
+    searchTags: function(tags, userId){
+      return searchTags(tags, userId);
+    },
+		retrieveSearch: function(key) {
+			return retrieveSearch(key);
+		}
 	}
 }])

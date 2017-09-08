@@ -1,4 +1,4 @@
-angular.module('sportium.directives',[])
+angular.module('fashion.directives',[])
 .directive('tagEnter', function () {
   return function(scope, element, attrs) {
 

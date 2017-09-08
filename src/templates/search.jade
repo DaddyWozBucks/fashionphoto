@@ -1,0 +1,19 @@
+div.row(ng-controller="SearchCtrl as sc")
+	div.col-12.col-lg-8()
+		form(name='searchForm', ng-submit='sc.search(searchForm.$valid)', novalidate='')
+			.form-group
+				label Tags
+				input.form-control(type='text', name='tags', ng-model='sc.searchTags', required='true')
+			// USERNAME
+			.form-group
+				label Username
+				input.form-control(type='text', name='username', ng-model='sc.userId', ng-minlength='3', ng-maxlength='12')
+			
+			button.btn.btn-primary(type='cancel') Cancel
+			button.btn.btn-primary(type='submit' ng-disabled="searchForm.$invalid") Submit
+	div.col-12.col-lg-8.row.d-flex.d-justify-content-around()
+		div.d-flex.sc-result(ng-repeat="ps in sc.searches" ng-style="{'background-image': 'url(' + ps.data.url_q + ')'}" ui-sref="app.results({key: ps.key})")
+			p {{ps.data.title}}
+			p {{ps.data.date_taken | dFormat: 'lll'}}
+			p {{ps.data.dateupload | dFormat: 'lll'}}
+			p {{ps.data.owner_name}}

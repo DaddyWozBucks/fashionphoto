@@ -43,10 +43,6 @@ gulp.task('css', function() {
    .pipe( livereload( server ));
 });
 
-// gulp.task('bower', function () {
-// 	bowerSrc()
-// 		.pipe(gulp.dest('dist/bower_components'));
-// });
 var jsFiles = [
       'src/assets/js/*.js',
       '!./public/js/**/*.js',
@@ -79,11 +75,7 @@ gulp.task('devjs', function() {
 gulp.task('build', function(){
 
 })
-// gulp.task('js', function() {
-//  return gulp.src('src/assets/js/*.js')
-//    .pipe( gulp.dest('dist/assets/scripts/'))
-//    .pipe( livereload( server ));
-// });
+
 var dist = {
   all: ['dist/**/*'],
   css: 'dist/assets/css/',
@@ -93,52 +85,28 @@ var dist = {
 gulp.task('bower2', function() {
   var srcs = [
         'bower_components/angular/angular.js',
-      'dist/bower_components/angular-ui-router/release/angular-ui-router.min.js',
+      'bower_components/angular-ui-router/release/angular-ui-router.min.js',
       'bower_components/angular-animate/angular-animate.min.js',
-      'dist/bower_components/angular-ui-router.stateHelper/statehelper.min.js',
-      'dist/bower_components/angular-resource/angular-resource.min.js',
+      'bower_components/angular-ui-router.stateHelper/statehelper.min.js',
+      'bower_components/angular-resource/angular-resource.min.js',
 
-      'dist/bower_components/re-tree/re-tree.js',
-      'dist/bower_components/jquery/dist/jquery.min.js',
-      'dist/bower_components/angular-sanitize/angular-sanitize.min.js',
-      'dist/bower_components/angular-cookies/angular-cookies.min.js',
-      'bower_components/json-formatter/dist/json-formatter.min.js',
-
-
-      'dist/bower_components/moment/moment.js',
+      'bower_components/re-tree/re-tree.js',
+      'bower_components/jquery/dist/jquery.min.js',
+      'bower_components/angular-sanitize/angular-sanitize.min.js',
+      'bower_components/angular-cookies/angular-cookies.min.js',
+      'bower_components/moment/moment.js',
       'bower_components/angular-aria/angular-aria.min.js',
       'bower_components/angular-messages/angular-messages.min.js',
-      'dist/bower_components/ngtouch/src/ngTouch.js',
-      'dist/bower_components/angular-touch/angular-touch.min.js',
-      'dist/bower_components/firebase/firebase.js',
-
-      'dist/bower_components/scroll-trigger/dist/scroll-trigger.js',
-      'dist/bower_components/angular-translate/angular-translate.min.js',
-      'dist/bower_components/angular-translate-handler-log/angular-translate-handler-log.min.js',
-      'dist/bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js',
-      'dist/bower_components/angular-translate-loader-partial/angular-translate-loader-partial.min.js',
-
-
-
-
-      'dist/bower_components/ngSanitize/index.js',
-      'dist/bower_components/angular-simple-logger/dist/angular-simple-logger.js',
-      'dist/bower_components/lodash/lodash.min.js',
-      // 'dist/bower_components/markerclustererplus/src/markerclusterer.js',
-      // 'dist/bower_components/google-maps-utility-library-v3-markerwithlabel/dist/markerwithlabel.js',
-      // 'dist/bower_components/google-maps-utility-library-v3-infobox/dist/infobox.js',
-      // 'dist/bower_components/google-maps-utility-library-v3-keydragzoom/dist/keydragzoom.js',
-      // 'dist/bower_components/js-rich-marker/src/richmarker.js',
-      'dist/bower_components/moment-timezone/builds/moment-timezone-with-data-2010-2020.js',
-
-
-      'dist/bower_components/waypoints/waypoints.js',
-      'dist/bower_components/SHA-1/sha1.js',
-
-      'dist/bower_components/ng-idle/angular-idle.js',
-
-      'bower_components/angular-material/angular-material.min.js',
-      'dist/bower_components/angularfire/dist/angularfire.min.js'
+      'bower_components/ngtouch/src/ngTouch.js',
+      'bower_components/angular-touch/angular-touch.min.js',
+      'bower_components/scroll-trigger/dist/scroll-trigger.js',
+      'bower_components/ngSanitize/index.js',
+      'bower_components/angular-simple-logger/dist/angular-simple-logger.js',
+      'bower_components/lodash/lodash.min.js',
+      'bower_components/moment-timezone/builds/moment-timezone-with-data-2010-2020.js',
+      'bower_components/waypoints/waypoints.js',
+      'bower_components/SHA-1/sha1.js',
+      'bower_components/angular-material/angular-material.min.js'
 
     ]
   return gulp.src(srcs)

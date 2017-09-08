@@ -1,0 +1,28 @@
+[debug] [2017-09-08T15:06:39.910Z] ----------------------------------------------------------------------
+[debug] [2017-09-08T15:06:39.914Z] Command:      /Users/warwickbeamish/.nvm/versions/node/v6.11.0/bin/node /usr/local/bin/firebase serve --only functions
+[debug] [2017-09-08T15:06:39.915Z] CLI Version:  3.9.1
+[debug] [2017-09-08T15:06:39.915Z] Platform:     darwin
+[debug] [2017-09-08T15:06:39.915Z] Node Version: v6.11.0
+[debug] [2017-09-08T15:06:39.915Z] Time:         Fri Sep 08 2017 16:06:39 GMT+0100 (WEST)
+[debug] [2017-09-08T15:06:39.915Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-09-08T15:06:39.934Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-09-08T15:06:39.934Z] > authorizing via signed-in user
+[debug] [2017-09-08T15:06:39.936Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/fashiontest-7aba2  
+ Fri Sep 08 2017 16:06:39 GMT+0100 (WEST)
+[debug] [2017-09-08T15:06:40.830Z] <<< HTTP RESPONSE 200
+[debug] [2017-09-08T15:06:40.831Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/fashiontest-7aba2/tokens  
+ Fri Sep 08 2017 16:06:40 GMT+0100 (WEST)
+[debug] [2017-09-08T15:06:41.566Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/warwickbeamish/Documents/bst/fashion'...
+[info] 
+[info] i  functions: Preparing to emulate HTTPS functions. Support for other event types coming soon.
+[debug] [2017-09-08T15:06:42.534Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/fashiontest-7aba2  
+ Fri Sep 08 2017 16:06:42 GMT+0100 (WEST)
+[debug] [2017-09-08T15:06:42.535Z] >>> HTTP REQUEST GET https://apikeys.googleapis.com/v1/projects/fashiontest-7aba2/apiKeys  
+ Fri Sep 08 2017 16:06:42 GMT+0100 (WEST)
+[debug] [2017-09-08T15:06:43.443Z] <<< HTTP RESPONSE 200
+[debug] [2017-09-08T15:06:43.490Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: searchTags: http://localhost:5002/fashiontest-7aba2/us-central1/searchTags
+[info] ✔  functions: getSizes: http://localhost:5002/fashiontest-7aba2/us-central1/getSizes

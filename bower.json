@@ -1,6 +1,6 @@
 {
-  "name": "Sportium test",
-  "description": "Data entry parser",
+  "name": "Fashion Flickr",
+  "description": "Image serach",
   "main": "app.js",
   "authors": [
     "Warwick Beamish"
@@ -26,40 +26,21 @@
     "angular-animate": "^1.6.1",
     "angular-ui-router.stateHelper": "~1.3.1",
     "angular-resource": "~1.4.8",
-
     "jquery": "^3.0.0",
     "angular-sanitize": "^1.6.4",
     "angular-cookies": "^1.5.0",
-
     "moment": "^2.15.1",
-    "angular-material": "1.1.1",
     "ngtouch": "^1.0.1",
     "angular-touch": "^1.5.5",
-    "angularfire": "^2.3.0",
-    "angular-translate": "^2.11.0",
-    "angular-translate-handler-log": "^2.11.0",
-    "angular-translate-loader-static-files": "^2.12.1",
     "re-tree": "^0.0.2",
     "hover": "Hover#^2.0.2",
     "scroll-trigger": "^0.5.4",
-
     "ngSanitize": "^0.0.2",
-    "moment-timezone": "^0.5.7",
-
-
-    "ng-idle": "^1.3.2",
-
-    "json-formatter": "^0.6.0"
+    "moment-timezone": "^0.5.7"
   },
   "resolutions": {
     "angular": "^1.6.6",
     "moment": "^2.15.1",
-    "angularfire": "^2.0.1",
-    "firebase": "^3.3.0",
-  
-
-    "angular-material": "^1.1.4",
-    "angular-translate": "~2.15.1",
     "angular-animate": "^1.6.6"
   }
 }

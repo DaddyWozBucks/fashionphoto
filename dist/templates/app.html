@@ -1,21 +1,7 @@
 
-<div layout-fill="layout-fill" layout="column" layout-align="start center">
-  <div flex="none" layout="row" layout-align="none center" class="ntitle white">
-    <div flex="none" class="titlebg"></div>
-    <div flex="flex" layout="row" layout-align="start center" class="center">
-      <h3 flex="none" class="no_m">Sportium</h3>
-    </div>
+<div class="container-fluid row">
+  <div class="title row col-12">
+    <div class="col-3">Fashion</div>
   </div>
-  <div flex="flex" layout="column" class="nmain">
-    <div flex="none" layout="row" layout-align="none center" ng-show="showNavSteps" class="nav_steps">
-      <div flex="20" layout="row" layout-align="center center" ui-sref="app.home">
-        <h4 flex="none" hide-xs="hide-xs" class="no_m">Home</h4><i hide-gt-xs="hide-gt-xs" class="material-icons">home</i>
-      </div>
-      <div flex="5" layout="row" layout-align="center center" ng-show="currentState != 'home'"><i class="material-icons">chevron_right</i></div>
-      <div flex="40" layout="row" layout-align="center center" ng-show="currentState != 'home'">
-        <h4 flex="none" class="no_m">{{currentState | capitalise}}</h4>
-      </div>
-    </div>
-    <div flex="flex" ui-view="main" layout="column" class="body"></div>
-  </div>
+  <div ui-view="main" class="col-12"></div>
 </div>

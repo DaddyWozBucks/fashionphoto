@@ -1,17 +1,12 @@
-angular.module('sportium',
-  ['sportium.controllers',
-   'sportium.services',
-   'sportium.directives',
-   'sportium.filters',
+angular.module('fashion',
+  ['fashion.controllers',
+   'fashion.services',
+   'fashion.directives',
+   'fashion.filters',
    'ui.router',
    'ngAnimate',
    'ngSanitize',
-   'firebase',
-   'ngMaterial',
-   'angular-storage',
-    'pascalprecht.translate',
-    'ngIdle',
-    'jsonFormatter'
+   'angular-storage'
   ])
 
   .run(['$rootScope', '$state', function($rootScope, $state) {
@@ -19,43 +14,13 @@ angular.module('sportium',
       // We can catch the error thrown when the $requireSignIn promise is rejected
       // and redirect the user back to the city page
       if (error === "AUTH_REQUIRED") {
-        $state.go("app.landing");
+        $state.go("app.search");
       }
     });
 
   }])
-  .config(['$mdDateLocaleProvider', function($mdDateLocaleProvider) {
-    $mdDateLocaleProvider.formatDate = function(date) {
-      return moment(date).format('YYYY-MM-DD');
-    };
-  }])
 
-  // .run(['Idle', function(Idle) {
-  //   // start watching when the app runs. also starts the Keepalive service by default.
-  //   Idle.watch();
-  // }])
 
-  .config(['$translateProvider', function($translateProvider) {
-
-  	$translateProvider.useStaticFilesLoader({
-  			 prefix: '../translations/'
-
-  		, suffix: '.json'
-  	}).preferredLanguage('en').useMissingTranslationHandlerLog().useSanitizeValueStrategy(null);
-
-  }])
-  // .run(['$rootScope', '$translate', function($rootScope, $translate) {
-  // 	$rootScope.$on('$translatePartialLoaderStructureChanged', function() {
-  // 		$translate.refresh();
-  // 	});
-  // }])
-  // .config(['$translateProvider', '$translatePartialLoaderProvider', function($translateProvider, $translatePartialLoaderProvider) {
-  // 	 $translatePartialLoaderProvider.addPart('app');
-  // 	$translateProvider.useLoader('$translatePartialLoader', {
-  // 		urlTemplate: 'https://tktr-fa4cf.firebaseio.com/translations/{part}/{lang}.json'
-  // 	});
-  // 	$translateProvider.preferredLanguage('en');
-  // }])
 
   .config(['$sceDelegateProvider', function($sceDelegateProvider) {
     $sceDelegateProvider.resourceUrlWhitelist([
@@ -94,32 +59,23 @@ angular.module('sportium',
 
           }
         })
-        .state('app.home', {
-          url: '/home'  ,
+
+        .state('app.results', {
+          url: 'search/:key/results',
           views: {
             "main": {
-              templateUrl: "templates/home.html",
-              controller: "HomeCtrl"
+              templateUrl: "templates/results.html",
+              controller: "ResultsCtrl"
             }
 
           }
         })
-        .state('app.data_entry', {
-          url: '/entry',
+        .state('app.search', {
+          url: '/search',
           views: {
             "main": {
-              templateUrl: "templates/entry.html",
-              controller: "EntryCtrl"
-            }
-
-          }
-        })
-        .state('app.landing', {
-          url: '/landing',
-          views: {
-            "main": {
-              templateUrl: "templates/landing.html",
-              controller: "LandingCtrl"
+              templateUrl: "templates/search.html",
+              controller: "SearchCtrl"
             }
 
           }
@@ -130,11 +86,8 @@ angular.module('sportium',
 
 
       $urlRouterProvider.otherwise(function() {
-        return '/app/home'
+        return '/app/search'
 
       });
     }
   ])
-  .config(['$mdThemingProvider', function($mdThemingProvider) {
-    $mdThemingProvider.theme('default')
-  }])

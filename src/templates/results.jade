@@ -1,0 +1,3 @@
+div.col-12.col-lg-8.row.d-flex.d-justify-content-around()
+  div.d-flex.sc-result(ng-repeat="ps in rc.results" ng-style="{'background-image': 'url(' + ps.data.url_q + ')'}" ui-sref="app.results({key: ps.key})")
+    p {{ps.data.title}}

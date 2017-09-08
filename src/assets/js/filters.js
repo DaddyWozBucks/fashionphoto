@@ -1,4 +1,4 @@
-angular.module('sportium.filters', [])
+angular.module('fashion.filters', [])
 .filter('OWMIcon', function() {
     return function(input) {
       return "http://openweathermap.org/img/w/"+ input +".png"
@@ -15,6 +15,11 @@ angular.module('sportium.filters', [])
         return temp + " " + key
       }
 
+    }
+})
+.filter('dFormat', function() {
+    return function(input, format) {
+      return (!!input) ? moment(input).clone().format(format) : '';
     }
 })
 .filter('capitalise', function() {

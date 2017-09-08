@@ -1,17 +1,20 @@
 {
-  "name": "Sportium test",
+  "name": "fashion test",
   "version": "1.0.0",
   "description": "Data entry parser",
   "main": "app.js",
   "dependencies": {
-
+    "angular-ui-bootstrap": "^2.5.0",
     "bower-main": "^0.2.14",
     "d.js": "^0.7.5",
     "dot": "^1.0.3",
+    "flickr-sdk": "^3.2.0",
+    "flickrapi": "^0.6.0",
     "jade": "^1.11.0",
     "minimatch": "^3.0.3",
     "moment-timezone": "^0.5.7",
-    "path-exists": "^3.0.0"
+    "path-exists": "^3.0.0",
+    "require": "^2.4.20"
   },
   "devDependencies": {
     "event-stream": "^3.3.2",
@@ -42,12 +45,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DaddyWozBucks/sportium.git"
+    "url": "git+https://github.com/DaddyWozBucks/fashion.git"
   },
   "author": "Warwick Beamish",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DaddyWozBucks/sportium/issues"
+    "url": "https://github.com/DaddyWozBucks/fashion/issues"
   },
-  "homepage": "https://sportium.bloodsweatandtears.eu"
+  "homepage": "https://fashion.bloodsweatandtears.eu"
 }
